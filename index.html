@@ -5,39 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Funkoshop</title>
     <link rel="icon" type="image/png" href="./img/branding/isotype.svg">
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/normaliz.css">
+    <link rel="stylesheet" href="./CSS/carrito.css">
   </head>
   <body>
-    <header>
-      <!--  Inicio header -->
-      <nav>
-        <picture>
-          <a href="./index.html">
-            <img
-              src="./img/branding/logo_light_horizontal.svg"
-              alt="Isologotipo de la Marca Funkoshop"
-            />
-          </a>
-        </picture>
-        <ul>
-          <li>
-            <a href="./pages/shop.html">SHOP</a>
-          </li>
-          <li>
-            <a href="./pages/contacto.html">CONTACTO</a>
-          </li>
-          <li>
-            <a href="./pages/login.html">LOGIN</a>
-          </li>
-          <li>
-            <a href="./pages/carrito.html">
-              <img src="./img/icons/cart-icon.svg" alt="icono de carrito" />
-            </a>
-          </li>
-        </ul>
+    <!-- HEADER -->
+    <header>        
+      <nav class="nabvar container">
+          <picture class="nabvar_logo">
+              <a href="./index.html">
+                  <img src="./../img/branding/logo_light_horizontal.svg" alt="isologotico de la marca funkoshop">
+              </a>
+          </picture> 
+          <ul class="nabvar_menu">
+              <li class="nabvar_item with-submenu">
+                  <a class="nabvar_link with-icon" href="./../pages/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                      <ul class="submenu">
+                          <li class="submenu_item">
+                              <a href="" class="submenu_link">Funkos</a>
+                          </li>
+                          <li class="submenu_item">
+                              <a href="" class="submenu_link">Remeras</a>
+                          </li>
+                          <li class="submenu_item">
+                              <a href="" class="submenu_link">LLaveros</a>
+                          </li>
+                      </ul>
+              </li>
+              <li class="nabvar_item">
+                  <a class="nabvar_link" href="./../pages/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nabvar_item">
+                  <a class="nabvar_link" href="./../pages/login.html">LOGIN</a>
+              </li>
+              <li class="nabvar_item">
+                  <a class="nabvar_cart" href="./../pages/carrito.html"><img src="./../img/icons/cart-icon.svg" alt="icono de carrito"></a>
+              </li>
+      </ul>
+
       </nav>
-    </header>
+  </header>
     <!-- Fin de header -->
 
     <main>
@@ -108,7 +115,7 @@
                 <picture>
                   <img
                     src="./img/star-wars/trooper-1.webp"
-                    alt="imagen star wars trooper"
+                    alt="Funko imagen starwars stormtrooper"
                   />
                 </picture>
                 <div>
@@ -163,35 +170,26 @@
     </main>
     <!-- fin main -->
 
-    <footer>
-      <!-- inicio footer -->
-      <section>
-        <nav>
-          <ul>
-            <li>
-              <a href="./pages/shop.html">SHOP</a>
-            </li>
-            <li>
-              <a href="./pages/register.html">REGISTRARSE</a>
-            </li>
-            <li>
-              <a href="./pages/login.html">LOGIN</a>
-            </li>
-            <li>
-              <a href="./pages/contacto.html">CONTACTO</a>
-            </li>
-          </ul>
-          <picture>
-            <img
-              src="./img/branding/isotype.svg"
-              alt="Isotipo de la marca Funkshop"
-            />
-          </picture>
-        </nav>
-      </section>
-      <p>All rights reserved 2023 - Funkshop &copy;</p>
-    </footer>
-    <!-- fin footer -->
+  <!-- FOOTER -->
+  <footer class="footer"> 
+    <nav class="nabvar container">
+      <ul class="nabvar_item">
+        <li class="nabvar_item">
+            <a class="nabvar_link" href="">SHOP</a>
+        </li>
+        <li class="nabvar_item">
+            <a class="nabvar_link" href="">INGRESAR</a>
+        </li>
+        <li class="nabvar_item">
+            <a class="nabvar_link" href="">CONTACTO</a>
+        </li>
+      </ul>
+      <picture>
+        <img src="./../img/branding/isotype.svg" alt="isotipo de funkoshop">
+    </picture>
+    </nav>            
+<p class="footer_copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
 
     <script src="./app.js"></script>
   </body>

@@ -1,7 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap');
 
+/* DESIGN SYSTEM */
+:root {
+    /* Palette */
+    --primary-solid: #FF3333;
+    --primary-900: rgb(255, 51, 51, 0.9);
+    --primary-500: rgb(255, 51, 51, 0.5);
+    --primary-300: rgb(255, 51, 51, 0.3);
 
+    --secondary-solid: #1d84b5;
+    --secondary-900: rgb(29, 132, 181, 0.9);
+    --secondary-500: rgb(29, 132, 181, 0.5);
+    --secondary-300: rgb(29, 132, 181, 0.3);
+
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+
+    --bg-dark-solid: #30343F;
+    --bg-light-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+
+    /* Typography */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /* Font-sizes */
+    --font-display: 4.6em; 
+    --font-xxl: 3.8em; 
+    --font-xl: 3.0em; 
+    --font-lg: 2.4em; 
+    --font-md: 2.0em; 
+    --font-sm: 1.6em; 
+    --font-xs: 1.4em; 
+
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+html {
+    font-family: var(--base-font);
+    color: var(--dark-solid);
+}
+header, footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
 
 body {
     width: 1440px;
@@ -20,7 +72,7 @@ header {
 }
 
 .container {
-    max-width: 1220px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
