@@ -28,19 +28,21 @@
     --alternative-font: 'Raleway', sans-serif;
 
     /* Font-sizes */
-    --font-display: 4.6em; 
-    --font-xxl: 3.8em; 
-    --font-xl: 3.0em; 
-    --font-lg: 2.4em; 
-    --font-md: 2.0em; 
-    --font-sm: 1.6em; 
-    --font-xs: 1.4em; 
+    --font-46: 4.6em; 
+    --font-38: 3.8em; 
+    --font-30: 3.0em; 
+    --font-24: 2.4em; 
+    --font-20: 2.0em; 
+    --font-16: 1.6em; 
+    --font-14: 1.4em; 
 
     /* Spacings */
     --spacing-128: 12.8rem;
     --spacing-68: 6.8rem;
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
@@ -67,8 +69,8 @@ img {
 
 /* HEADER */
 header {
-    background: #30343F;
-    padding: 38px;
+    background: var(--bg-dark-solid);
+    padding: var(--spacing-36);
 }
 
 .container {
@@ -87,38 +89,34 @@ header {
     max-width: 350px;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: var(--spacing-20);
 }
 .nabvar_menu {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: var(--spacing-36);
 }
 .nabvar_link {
     position: relative;
     color: #FFF;
     font-family: "Raleway";
-    font-size: 20px;
+    font-size: var(--font-20);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 8px 16px;
+    padding: var(--spacing-8) var(--spacing-16);
     display: inline-block;
-    -webkit-transition: background 0.3s ease-in-out ;
-    -moz-transition: background 0.3s ease-in-out ;
-    -ms-transition: background 0.3s ease-in-out ;
-    -o-transition: background 0.3s ease-in-out ;
     transition: background 0.3s ease-in-out ;
 
 }
 .nabvar_link:hover {
-    background-color: #FF3333e6;
+    background-color: var(--primary-900);
 }
 
 .with-icon {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--spacing-8);
 }
 
 .with-submenu:hover .submenu {
@@ -127,22 +125,21 @@ header {
 
 .submenu {
     display: none;
-    background: #30343F;
-    font-family: 'Raleway';
-    
+    background: var(--bg-dark-solid);
+    font-family: 'Raleway';    
     position: absolute;
     width: 150px;
     
 }
 .submenu_item {
     display: block;
-    font-size: 20px;
+    font-size: var(--font-20);
 }
 .submenu_link {
     display: block;
-    padding: 8px 16px;
+    padding: var(--spacing-8) var(--spacing-16);
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: var(--font-20);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -150,9 +147,11 @@ header {
 
 }
 .submenu_link:hover {
-    background-color: #FF3333e6;
+    background-color: var(--primary-900);
 }
-    
+/* FIN HEADER */
+
+/* CARRITO */
 .titulo_carrito_contain{
     width: 1220px;
     margin: auto;
@@ -491,22 +490,23 @@ header {
     line-height: normal;
     justify-content: center;
     margin: auto;
-}    
+}   
+/* FIN CARRITO */
 
 /* FOOTER */
 .footer {
-    background: #30343F;
-    padding: 100px;
-    padding-bottom: 20px;
+    background: var(--bg-dark-solid);
+    padding: var(--spacing-68);
+    padding-bottom: var(--spacing-20);
 }
 
 .footer_copy {
-    color: #FFF;
-font-family: Raleway;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-align: center;
-margin-top: 56px;
+    color: var(--light-font-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-20);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-top: var(--spacing-36);
 }
