@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Funkoshop</title>
-    <link rel="icon" type="image/png" href="./img/branding/isotype.svg">
+    <link rel="icon" type="image/png" href="./assets/img/branding/isotype.svg">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <!-- agregue esta linea para un compañero github -->
-    <!--     otra linea para un compañero git pull -->
-    <header>
-      <!--  Inicio header -->
-      <nav>
-        <picture>
+
+    <header> <!--  Inicio header -->
+      <nav class="nav-coco">
+
+        <picture class="picture-nav-coco"> <!-- logo-enlace -->
           <a href="./index.html">
             <img
-              src="./img/branding/logo_light_horizontal.svg"
+              src="./assets/img/branding/logo_light_horizontal.svg"
               alt="Isologotipo de la Marca Funkoshop"
             />
           </a>
         </picture>
-        <ul>
+
+        <ul class="enlaces-nav-coco"> <!-- contenedor enlaces con carrito -->
           <li>
             <a href="./pages/shop.html">SHOP</a>
           </li>
@@ -34,60 +34,66 @@
           </li>
           <li>
             <a href="./pages/carrito.html">
-              <img src="./img/icons/cart-icon.svg" alt="icono de carrito" />
+              <img src="./assets/img/icons/cart-icon.svg" alt="icono de carrito" />
             </a>
           </li>
         </ul>
-      </nav>
-    </header>
-    <!-- Fin de header -->
 
-    <main>
-      <!-- inicio main -->
-      <section>
-        <!-- banner -->
-        <article>
+      </nav>
+    </header> <!-- Fin header -->
+    
+    <main> <!-- Inicio main -->
+      
+      <section class="banner-section-coco"> <!-- Inicio banner -->
+        <article class="banner-article-coco">
           <h3>Nuevos Ingresos</h3>
           <p>Descubri el próximo Funko Pop de tu colección</p>
-          <a href="./pages/shop.html">SHOP</a>
+          <a href="./pages/shop.html" class="enlace-boton">
+            <button class="boton-banner-coco">SHOP</button> 
+          </a>
         </article>
-      </section>
+      </section> <!-- Fin banner -->
 
-      <section>
-        <!-- primer bloque -->
-        <article>
-          <h3>Star Wars & The Mandalorian</h3>
+      <section class="primer-section-coco">  <!-- primer bloque -->
+        <article class="primer-article-coco">
+            <h3>START WARS &&nbsp; THE MANDALORIAN</h3>
           <p>
-            Disfruta de una saga que sigue agregando personajes a su colección.
+            Disfruta de una saga que sigue&nbsp; agregando personajes a su colección.
           </p>
-          <a href="./pages/shop.html">VER COLECCIÓN</a>
+          <hr class="hr-coco"/> <!-- linea red -->
+          <a href="./pages/shop.html" class="enlace-boton">
+            <button class="boton-coleccion-coco">VER COLECCIÓN</button>
+          </a>
         </article>
-        <picture>
+        <picture class="picture-mandalorian-coco">
           <img
-            src="./img/star-wars/baby-yoda-1.webp"
+            src="./assets/img/star-wars/baby-yoda-1.webp"
             alt="imagen starwars baby-yoda"
           />
         </picture>
-      </section>
-      <section>
-        <!-- segundo bloque -->
-        <article>
+      </section> <!-- fin primer boque -->
+
+      <section class="segundo-section-coco" > <!-- segundo bloque -->
+        <article class="segundo-article-coco">
           <h3>POKEMON INDIGO</h3>
           <p>
             Atrapa todos los que puedas y disfruta de una colección llena de
             amigos.
           </p>
-          <a href="./pages/shop.html">VER COLECCIÓN</a>
+          <hr class="hr-coco"/> <!-- linea red -->
+          <a href="./pages/shop.html" class="enlace-boton">
+            <button class="boton-coleccion-coco">VER COLECCIÓN</button>
+          </a>
         </article>
-        <picture>
+        <picture class="picture-indigo-coco">
           <img
-            src="./img/pokemon/vulpix-1.webp"
+            src="./assets/img/pokemon/vulpix-1.webp"
             alt="imagen pokemon indigo vulpix"
           />
         </picture>
-      </section>
-      <section>
-        <!-- tercer bloque -->
+      </section> <!-- fin segundo bloque -->
+
+      <section> <!-- tercer bloque -->
         <article>
           <h3>HARRY POTTER</h3>
           <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
@@ -99,9 +105,10 @@
             alt="imagen harry potter snape patronus indigo vulpix"
           />
         </picture>
-      </section>
-      <section>
-        <!-- cuarto bloque SLIDER-->
+      </section> <!-- fin tercer bloque -->
+
+      <section> <!-- cuarto bloque SLIDER-->
+        
         <h2>ÚLTIMOS LANZAMIENTOS</h2>
         <ul>
           <li>
@@ -109,7 +116,7 @@
               <a href="">
                 <picture>
                   <img
-                    src="./img/star-wars/trooper-1.webp"
+                    src="./assets/img/star-wars/trooper-1.webp"
                     alt="imagen star wars trooper"
                   />
                 </picture>
@@ -128,7 +135,7 @@
               <a href="">
                 <picture>
                   <img
-                    src="./img/pokemon/pidgeotto-1.webp"
+                    src="./assets/img/pokemon/pidgeotto-1.webp"
                     alt="imagen pokemon pidgeotto"
                   />
                 </picture>
@@ -147,7 +154,7 @@
               <a href="">
                 <picture>
                   <img
-                    src="./img/harry-potter/luna-1.webp"
+                    src="./assets/img/harry-potter/luna-1.webp"
                     alt="imagen harry potter luna"
                   />
                 </picture>
@@ -161,12 +168,11 @@
             </article>
           </li>
         </ul>
-      </section>
-    </main>
-    <!-- fin main -->
+      </section> <!-- fin cuarto bloque SLIDER -->
 
-    <footer>
-      <!-- inicio footer -->
+    </main> <!-- fin main -->
+
+    <footer> <!-- inicio footer -->
       <section>
         <nav>
           <ul>
@@ -185,15 +191,14 @@
           </ul>
           <picture>
             <img
-              src="./img/branding/isotype.svg"
+              src="./assets/img/branding/isotype.svg"
               alt="Isotipo de la marca Funkshop"
             />
           </picture>
         </nav>
       </section>
       <p>All rights reserved 2023 - Funkshop &copy;</p>
-    </footer>
-    <!-- fin footer -->
+    </footer> <!-- fin footer -->
 
     <script src="./app.js"></script>
   </body>
