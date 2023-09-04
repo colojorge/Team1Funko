@@ -16,8 +16,8 @@ htm{
 .nav-coco {
     display: flex;
     justify-content: space-between;
-    width: 100vw !important;
-    height: 15vh;
+    width: 1423px;
+    height: 144px;
     background-color: #30343F;
 }
 /* imagen nav */
@@ -28,17 +28,15 @@ htm{
 }
 /* enlaces nav */
 .enlaces-nav-coco {
-    width: 406px;
-    height: 31px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 406px;
+    height: 31px;
     font-family: 'Raleway', sans-serif;
     margin: 54px 110px 0px 0px;
-}
-.enlaces-nav-coco {
     list-style: none;
-}
+
 .enlaces-nav-coco a {
     text-decoration: none;
     font-weight: 500;
@@ -50,7 +48,7 @@ htm{
 /* ESTILOS BANNER */
 .banner-section-coco {
     display: flex;
-    width: 100vw;
+    width: 1423px;
     height: 388px;
     margin-bottom: 50px;
     background-image: url("./assets/img/funkos-banner.webp");
@@ -112,6 +110,8 @@ htm{
 .primer-section-coco { 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+    max-width: 100%;
     width: 1220px;
     height: 600px;
     margin-left: 110px;
@@ -149,9 +149,6 @@ htm{
 .segundo-section-coco { 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    width: 1220px;
-    height: 600px;
     margin-left: 110px;
 }
 
