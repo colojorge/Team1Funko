@@ -28,13 +28,13 @@
     --alternative-font: 'Raleway', sans-serif;
 
     /* Font-sizes */
-    --font-46: 4.6em; 
-    --font-38: 3.8em; 
-    --font-30: 3.0em; 
-    --font-24: 2.4em; 
-    --font-20: 2.0em; 
-    --font-16: 1.6em; 
-    --font-14: 1.4em; 
+    --font-46: 4.6rem; 
+    --font-38: 3.8rem; 
+    --font-30: 3.0rem; 
+    --font-24: 2.4rem; 
+    --font-20: 2rem; 
+    --font-16: 1.6rem; 
+    --font-14: 1.4rem; 
 
     /* Spacings */
     --spacing-128: 12.8rem;
@@ -49,6 +49,8 @@
 }
 
 html {
+    box-sizing: border-box;
+    line-height: 1; /* 1 */
     font-family: var(--base-font);
     color: var(--dark-solid);
 }
@@ -67,97 +69,13 @@ img {
     width: 100%;
 }
 
-/* HEADER */
-header {
-    background: var(--bg-dark-solid);
-    padding: var(--spacing-36);
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.nabvar {
-    display: flex;
-    flex-shrink: 0;
-    justify-content: space-between;
-    align-items: center;
-}
-.nabvar_logo {
-    display: flex;
-    max-width: 350px;
-    justify-content: center;
-    align-items: center;
-    gap: var(--spacing-20);
-}
-.nabvar_menu {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-36);
-}
-.nabvar_link {
-    position: relative;
-    color: #FFF;
-    font-family: "Raleway";
-    font-size: var(--font-20);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding: var(--spacing-8) var(--spacing-16);
-    display: inline-block;
-    transition: background 0.3s ease-in-out ;
-
-}
-.nabvar_link:hover {
-    background-color: var(--primary-900);
-}
-
-.with-icon {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-8);
-}
-
-.with-submenu:hover .submenu {
-    display: block;
-}
-
-.submenu {
-    display: none;
-    background: var(--bg-dark-solid);
-    font-family: 'Raleway';    
-    position: absolute;
-    width: 150px;
-    
-}
-.submenu_item {
-    display: block;
-    font-size: var(--font-20);
-}
-.submenu_link {
-    display: block;
-    padding: var(--spacing-8) var(--spacing-16);
-    color: #FFFFFF;
-    font-size: var(--font-20);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    transition: background 0.3s  ease-in-out;
-
-}
-.submenu_link:hover {
-    background-color: var(--primary-900);
-}
-/* FIN HEADER */
-
 /* CARRITO */
-.titulo_carrito_contain{
+.titulo__carrito__contain{
     width: 1220px;
     margin: auto;
     margin-top: 125px;
 }
-.titulo_carrito {
+.titulo__carrito {
     color: #111;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Raleway', sans-serif;
@@ -188,7 +106,7 @@ header {
     margin-bottom: 32px;
 }
 
-.detalle_producto {
+.detalle__producto {
     color: #000;
     font-family: 'Inter', sans-serif;font-size: 16px;
     font-style: normal;
@@ -197,7 +115,7 @@ header {
     width: 50%;
     padding-left: 10.5%;
 }
-.detalle_cantidad {
+.detalle__cantidad {
     color: #000;
     font-family: Inter;
     font-size: 16px;
@@ -207,7 +125,7 @@ header {
     width: 25%;
     padding-left: 2px;
 }
-.detalle_total {
+.detalle__total {
     color: #000;
     font-family: Inter;
     font-size: 16px;
@@ -230,7 +148,7 @@ header {
     margin: auto;
     margin-bottom: 32px;
 }
-.item_contain {
+.item__contain {
     display: flex;
     align-items: center;
     gap: 18px;
@@ -238,16 +156,16 @@ header {
     flex-direction: row;
     width: 50%;
 }
-.item_imagen {
+.item__imagen {
     width: 118px;
     height: 118px;
     flex-shrink: 0;
 }
-.item_contain_txt {
+.item__contain__txt {
     display: flex;
     flex-direction: column;
 }
-.item_nombre {
+.item__nombre {
     color: #111;
     font-family: Inter;
     font-size: 24px;
@@ -256,7 +174,7 @@ header {
     line-height: normal;
     margin-bottom: 6px;
 }
-.item_saga {
+.item__saga {
     color: #30343F;
     font-family: Inter;
     font-size: 14px;
@@ -265,7 +183,7 @@ header {
     line-height: normal;
     margin-bottom: 20px;
 }
-.item_precio {
+.item__precio {
     color: #333;
     font-family: Inter;
     font-size: 14px;
@@ -273,7 +191,7 @@ header {
     font-weight: 400;
     line-height: normal;
 }
-.cant_contain {
+.cant__contain {
     display: flex;
     width: 25%;
 }
@@ -294,14 +212,14 @@ header {
     line-height: normal;
 }
 
-.cant_var {
+.cant__var {
     display: flex;
     padding: 0px 4px;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.cant_var_mas, .cant_var_menos {
+.cant__var__mas, .cant__var__menos {
     display: flex;
     justify-content: center;
     height: 18px;
@@ -310,7 +228,7 @@ header {
 
 }
 
-.item_total {
+.item__total {
     color: #333;
     font-family: Inter;
     font-size: 20px;
@@ -319,25 +237,25 @@ header {
     line-height: normal;
 }
 
-.item_eliminar {
+.item__eliminar {
     display: flex;
     flex-grow: 1;
     height: 28px;
     flex-shrink: 0;
     justify-content: flex-end;
 }
-.item_eliminar img {
+.item__eliminar img {
     display: flex;
     width: 28px;
 
 }
-.resumen_contain_titulo{
+.resumen__contain__titulo{
     display: flex;
     width: 1220px;
     margin: auto;
 }
 
-.resumen_titulo {
+.resumen__titulo {
     color: #111;
     font-family: Raleway;
     font-size: 46px;
@@ -365,7 +283,7 @@ header {
     align-items: flex-end;
 }
 
-.resumen_contain {
+.resumen__contain {
     display: inline-flex;
     padding: 24px;
     flex-direction: column;
@@ -376,13 +294,13 @@ header {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-.resumen_container_cantidad {
+.resumen__container__cantidad {
     display: flex;
     justify-content: space-between;
     width: 524px;
 
 }
-.resumen_cantidad_txt {
+.resumen__cantidad__txt {
     color: #000;
     font-family: Inter;
     font-size: 16px;
@@ -390,7 +308,7 @@ header {
     font-weight: 600;
     line-height: normal;
 }
-.resumen_cantidad_num {
+.resumen__cantidad__num {
     color: #747474;
     font-family: Inter;
     font-size: 16px;
@@ -399,36 +317,13 @@ header {
     line-height: normal;
 }
 
-.resumen_container_subtotal {
-    display: flex;
-    width: 524px;
-    justify-content: space-between;
-    align-items: center;
-}
-.resumen_subtotal_txt {
-    color: #000;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-.resumen_subtotal_num {
-    color: #747474;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.resumen_container_envio {
+.resumen__container__subtotal {
     display: flex;
     width: 524px;
     justify-content: space-between;
     align-items: center;
 }
-.resumen_envio_txt {
+.resumen__subtotal__txt {
     color: #000;
     font-family: Inter;
     font-size: 16px;
@@ -436,7 +331,7 @@ header {
     font-weight: 600;
     line-height: normal;
 }
-.resumen_envio_num {
+.resumen__subtotal__num {
     color: #747474;
     font-family: Inter;
     font-size: 16px;
@@ -445,7 +340,30 @@ header {
     line-height: normal;
 }
 
-.resumen_container_total {
+.resumen__container__envio {
+    display: flex;
+    width: 524px;
+    justify-content: space-between;
+    align-items: center;
+}
+.resumen__envio__txt {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.resumen__envio__num {
+    color: #747474;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.resumen__container__total {
     display: flex;
     width: 524px;
     padding-top: 8px;
@@ -453,7 +371,7 @@ header {
     align-items: center;
     border-top: 2px solid #F33;
 }
-.resumen_total_txt {
+.resumen__total__txt {
     color: #000;
     font-family: Inter;
     font-size: 20px;
@@ -462,7 +380,7 @@ header {
     line-height: normal;
 }
 
-.resumen_total_num {
+.resumen__total__num {
     color: #747474;
     font-family: Inter;
     font-size: 20px;
@@ -471,7 +389,7 @@ header {
     line-height: normal;
 }
 
-.btb_pagar {
+.btb__pagar {
     display: flex;
     width: 572px;
     height: 68.656px;
@@ -500,7 +418,7 @@ header {
     padding-bottom: var(--spacing-20);
 }
 
-.footer_copy {
+.footer__copy {
     color: var(--light-font-solid);
     font-family: var(--base-font);
     font-size: var(--font-20);
