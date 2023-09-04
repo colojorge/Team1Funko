@@ -16,9 +16,8 @@ htm{
 .nav-coco {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
-    width: 1440px;
-    height: 144px;
+    width: 100vw !important;
+    height: 15vh;
     background-color: #30343F;
 }
 /* imagen nav */
@@ -51,8 +50,7 @@ htm{
 /* ESTILOS BANNER */
 .banner-section-coco {
     display: flex;
-    max-width: 100%;
-    width: 1440px;
+    width: 100vw;
     height: 388px;
     margin-bottom: 50px;
     background-image: url("./assets/img/funkos-banner.webp");
