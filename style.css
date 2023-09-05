@@ -16,7 +16,6 @@ htm{
 .nav-coco {
     display: flex;
     justify-content: space-between;
-    /* max-width: 100%; */
     width: 1423px;
     height: 144px;
     background-color: #30343F;
@@ -34,6 +33,8 @@ htm{
     width: 406px;
     height: 31px;
     align-items: center;
+    width: 406px;
+    height: 31px;
     font-family: 'Raleway', sans-serif;
     margin: 54px 110px 0px 0px;
     list-style: none;
@@ -52,8 +53,8 @@ htm{
 /* ESTILOS BANNER */
 .banner-section-coco {
     display: flex;
-    /* max-width: 100%; */
-    width: 1423px;
+    max-width: 100%;
+    width: 1440px;
     height: 388px;
     margin-bottom: 50px;
     background-image: url("./assets/img/funkos-banner.webp");
@@ -115,8 +116,8 @@ htm{
 .primer-section-coco { 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* width: 1220px; */
-    /* height: 600px; */
+    width: 1220px;
+    height: 600px;
     margin-left: 110px;
 }
 
@@ -153,8 +154,8 @@ htm{
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 1fr 1fr; */
-    /* width: 1220px; */
-    /* height: 600px; */
+    width: 1220px;
+    height: 600px;
     margin-left: 110px;
 }
 
