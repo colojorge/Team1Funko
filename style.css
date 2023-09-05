@@ -30,8 +30,6 @@ htm{
 .enlaces-nav-coco {
     display: flex;
     justify-content: space-around;
-    width: 406px;
-    height: 31px;
     align-items: center;
     width: 406px;
     height: 31px;
@@ -53,8 +51,7 @@ htm{
 /* ESTILOS BANNER */
 .banner-section-coco {
     display: flex;
-    max-width: 100%;
-    width: 1440px;
+    width: 1423px;
     height: 388px;
     margin-bottom: 50px;
     background-image: url("./assets/img/funkos-banner.webp");
@@ -116,6 +113,7 @@ htm{
 .primer-section-coco { 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
     width: 1220px;
     height: 600px;
     margin-left: 110px;
@@ -153,13 +151,10 @@ htm{
 .segundo-section-coco { 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
-    width: 1220px;
-    height: 600px;
     margin-left: 110px;
 }
 
-.segundo-section-coco .segundo-article-coco {
+.segundo-article-coco {
     order: 2;
     width: 645px;
     height: 249px;
