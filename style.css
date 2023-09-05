@@ -39,21 +39,19 @@ footer {
   text-align: center;
 }
 
-footer > img {
+/*Footer*/
+footer > picture > img {
   height: 75%;
 }
 
-body,
-p,
-ul {
-  margin: 0;
-  padding: 0;
+picture {
+  display: contents;
 }
 
-li {
+footer > ul > li {
   list-style: none !important;
 }
-ul {
+footer > ul {
   display: flex;
   flex-direction: column;
   height: 100%;
