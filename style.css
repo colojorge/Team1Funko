@@ -16,30 +16,31 @@ htm{
 .nav-coco {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
-    width: 1440px;
+    /* max-width: 100%; */
+    width: 1423px;
     height: 144px;
     background-color: #30343F;
 }
 /* imagen nav */
 .picture-nav-coco {
     width: 372px;
-    /* height: 65.19; */
+    height: 65.19px;
     margin: 39px 0px 0px 110px;
 }
 /* enlaces nav */
 .enlaces-nav-coco {
-    width: 406px;
-    height: 31px;
     display: flex;
     justify-content: space-around;
+    width: 406px;
+    height: 31px;
     align-items: center;
     font-family: 'Raleway', sans-serif;
     margin: 54px 110px 0px 0px;
-}
-.enlaces-nav-coco {
     list-style: none;
 }
+/* .enlaces-nav-coco {
+    
+} */
 .enlaces-nav-coco a {
     text-decoration: none;
     font-weight: 500;
@@ -51,8 +52,8 @@ htm{
 /* ESTILOS BANNER */
 .banner-section-coco {
     display: flex;
-    max-width: 100%;
-    width: 1440px;
+    /* max-width: 100%; */
+    width: 1423px;
     height: 388px;
     margin-bottom: 50px;
     background-image: url("./assets/img/funkos-banner.webp");
@@ -114,8 +115,8 @@ htm{
 .primer-section-coco { 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 1220px;
-    height: 600px;
+    /* width: 1220px; */
+    /* height: 600px; */
     margin-left: 110px;
 }
 
@@ -152,8 +153,8 @@ htm{
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 1fr 1fr; */
-    width: 1220px;
-    height: 600px;
+    /* width: 1220px; */
+    /* height: 600px; */
     margin-left: 110px;
 }
 
