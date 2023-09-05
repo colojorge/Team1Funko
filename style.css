@@ -16,7 +16,7 @@ body {
     "header "
     "main "
     "footer ";
-  grid-template-rows: 5% auto 10%;
+  grid-template-rows: 10% auto 15%;
   height: 100dvh;
 }
 
@@ -38,17 +38,48 @@ footer {
   align-items: center;
   text-align: center;
 }
+/*Header*/
+header {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 10% auto auto 10%;
+  grid-template-areas: ". logo nav .";
+  align-items: center;
+}
+
+header > picture {
+  grid-area: logo;
+}
+
+header > picture > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+header > nav {
+  grid-area: nav;
+}
+header > nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li > a {
+  all: unset;
+}
+li > a:hover {
+  cursor: pointer;
+}
 
 /*Footer*/
 footer > picture > img {
   height: 75%;
 }
 
-picture {
+footer > picture {
   display: contents;
 }
 
-footer > ul > li {
+ul > li {
   list-style: none !important;
 }
 footer > ul {
