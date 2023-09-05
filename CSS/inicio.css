@@ -115,17 +115,14 @@ img {
     font-size: var(--font-20);
     background-color: var(--bg-light-solid);
     padding: var(--spacing-12) var(--spacing-68);
-    border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    font-weight: 500;
+    border-radius: 50px;
+    font-weight: 500;   
     transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+
 }
 .hero__link:hover {
     background-color: var(--primary-900);
