@@ -1,0 +1,142 @@
+
+
+.edit-title {
+    color: #1F1F1F;
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.68px;
+}
+.edit-cat-lic__container {
+    display: block;
+    margin-bottom: 36px;
+}
+.edit-categoria-label {
+    color: #000;
+    text-align: right;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+select {
+    height: 44px;
+    border-radius: 6px;   
+    color: #1F1F1F;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.edit-name__container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 36px;
+}
+.edit-name__name {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+.edit-name__text {
+    color: #1F1F1F;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+
+textarea {
+    color: #1F1F1F;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+.edit-sku-price-stock__sku {
+    color: #000;
+    text-align: right;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+.edit-sku-price-stock__container {
+    display: flex;
+    margin-bottom: 48px;
+    gap: 56px;
+}
+
+
+.edit-sku-price-stock__input {
+    border: none;
+    border-bottom: 2px #F33 solid;
+    height: 44px;
+    width: 15ch;
+    color: #111;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+.edit-sku-price-stock__stock {
+    border: none;
+    border-bottom: 2px #F33 solid;
+    height: 44px;
+    width: 5ch;
+    color: #111;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--bg-dark-solid);
+    padding: var(--spacing-68);
+    padding-bottom: var(--spacing-20);
+}
+
+.footer__copy {
+    color: var(--light-font-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-20);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-top: var(--spacing-36);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
