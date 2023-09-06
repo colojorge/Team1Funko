@@ -195,10 +195,33 @@ letter-spacing: 0.96px;
 
 .edit-img__container {
     display: flex;
-    margin-bottom: 28px;
+    flex-direction: column;
+    margin-bottom: 36px;
+    gap: 10px;
+    align-items: start;
+}
+.edit-img__container span {
+    display: flex;
     gap: 10px;
     align-items: flex-end;
 }
+.edit-img__container picture {
+    display: flex;
+    gap: 24px;
+}
+.edit-img__container picture img {
+    border-bottom: #F33 1px solid;
+}
+.edit-img__container picture div p {
+color: #000;
+font-family: Raleway;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: center;
+}
+
 .edit-img {
     color: #000;
 text-align: right;
@@ -217,6 +240,18 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 letter-spacing: 0.56px;
+}
+
+.edit-submit input {
+    color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+background: #F33;
+margin-bottom: 36px;
+padding: 13px 22px;
 }
 
 

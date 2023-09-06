@@ -88,13 +88,23 @@
             </span>
         </fieldset>
         <fieldset class="edit-img__container">
-            <label class="edit-img" for="imagenes">Imagenes:</label>
-            <input class="edit-img__att" type="file" name="imagenes" id="imagenes" value="LALALA">
-
+            <span>
+                <label class="edit-img" for="imagenes">Imagenes:</label>
+                <input class="edit-img__att" type="file" name="imagenes" id="imagenes" value="imagenes">
+            </span>
             <picture>
-                <img src="./../../img/kakashi_hatake_front.png" alt="">
-                <img src="./../../img/kakashi_hatake_back.png" alt="">
+                <div>
+                    <img src="./../../img/kakashi_hatake_front.png" alt="Frente de la imagen">
+                    <p>Frente</p>
+                </div>
+                <div>
+                    <img src="./../../img/kakashi_hatake_back.png" alt="Dorso de la imagen">
+                    <p>Dorso</p>
+                </div>
             </picture>
+        </fieldset>
+        <fieldset class="edit-submit">
+            <input type="submit" value="Modificar Producto">
         </fieldset>
     
     </form>
