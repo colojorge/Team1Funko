@@ -38,7 +38,7 @@
         <fieldset>
             <span class="edit-cat-lic__container">
                 <label class="edit-categoria-label" for="categoria">Categoria</label>
-                    <select name="categoria" id="categoria">
+                    <select class="categoria-select" name="categoria" id="categoria">
                         <option value="figuras">Figuras</option>
                         <option value="muñecos">Muñecos</option>
                     </select>
@@ -53,25 +53,48 @@
         <fieldset>
             <span class="edit-name__container">
                 <h4 class="edit-name__name">Nombre del producto:</h4>
-                <p class="edit-name__text">Kakashi Hatake Shippuden Saga</p>
+                <input class="edit-name__input" type="text" name="name" id="name" placeholder="Kakashi Hatake Shippuden Saga">
             </span>
         </fieldset>
         <fieldset>
             <textarea name="descripcion" id="descripcion" cols="70%" rows="6" placeholder="Descripcion"></textarea>
         </fieldset>
-        <fieldset class="edit-sku-price-stock__container">
-            <span>
-                <label class="edit-sku-price-stock__sku" for="sku">SKU:</label>
-                <input class="edit-sku-price-stock__input" type="text" name="sku" id="sku">
+        <fieldset class="sku-price-stock__container">
+            <span class="sku-sku">
+                <label class="sku-price-stock__sku" for="sku">SKU:</label>
+                <input class="sku-price-stock__input" type="text" name="sku" id="sku">
             </span>
-            <span>
-                <label class="edit-sku-price-stock__sku" for="precio">Precio:</label>
-                <input class="edit-sku-price-stock__input" type="text" name="precio" id="precio">
+            <span class="sku-price">
+                <label class="sku-price-stock__sku" for="precio">Precio:</label>
+                <input class="sku-price-stock__input" type="text" name="precio" id="precio">
             </span>
-            <span>
-                <label class="edit-sku-price-stock__sku" for="stock">Stock:</label>
-                <input class="edit-sku-price-stock__stock" type="number" name="stock" id="stock">
+            <span class="sku-stock">
+                <label class="sku-price-stock__sku" for="stock">Stock:</label>
+                <input class="sku-price-stock__stock" type="number" name="stock" id="stock">
             </span>
+        </fieldset>
+        <fieldset class="edit-promo__container">
+            <span class="edit-promo__descuento">
+                <label class="edit-promo__descuento-title" for="descuento">Descuento:</label>
+                <input class="edit-promo__descuento__input" type="text" name="descuento" id="descuento">
+            </span>
+            <span class="edit-promo__cuotas">
+                <label class="edit-promo__cuotas-title" for="cuotas">Cuotas:</label>
+                <select class="edit-promo-select" name="cuotas" id="cuotas">
+                    <option value="3sininteres">3 sin interés</option>
+                    <option value="6sininteres">6 sin interés</option>
+                    <option value="12sininteres">12 sin interés</option>
+                </select>
+            </span>
+        </fieldset>
+        <fieldset class="edit-img__container">
+            <label class="edit-img" for="imagenes">Imagenes:</label>
+            <input class="edit-img__att" type="file" name="imagenes" id="imagenes" value="LALALA">
+
+            <picture>
+                <img src="./../../img/kakashi_hatake_front.png" alt="">
+                <img src="./../../img/kakashi_hatake_back.png" alt="">
+            </picture>
         </fieldset>
     
     </form>

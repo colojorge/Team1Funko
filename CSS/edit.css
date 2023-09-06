@@ -8,6 +8,8 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.68px;
+    margin-top: 36px;
+    margin-bottom: 44px;
 }
 .edit-cat-lic__container {
     display: block;
@@ -23,7 +25,9 @@
     line-height: normal;
     letter-spacing: 0.96px;
 }
-
+.categoria-select {
+    margin-right: 46px;
+}
 select {
     height: 44px;
     border-radius: 6px;   
@@ -48,6 +52,22 @@ select {
     line-height: normal;
     letter-spacing: 0.96px;
 }
+.edit-name__input {
+    border: none;
+    border-bottom: 2px #F33 solid;
+    width: 50ch;
+    display: flex;
+    align-items: center;
+}
+.edit-name__input::placeholder {
+    color: #1F1F1F;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
 .edit-name__text {
     color: #1F1F1F;
     font-family: Inter;
@@ -68,7 +88,7 @@ textarea {
     letter-spacing: 1px;
     margin-bottom: 24px;
 }
-.edit-sku-price-stock__sku {
+.sku-price-stock__sku {
     color: #000;
     text-align: right;
     font-family: Inter;
@@ -78,17 +98,20 @@ textarea {
     line-height: normal;
     letter-spacing: 0.96px;
 }
-.edit-sku-price-stock__container {
+.sku-price-stock__container {
     display: flex;
     margin-bottom: 48px;
     gap: 56px;
 }
+.sku-sku, .sku-price, .sku-stock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-
-.edit-sku-price-stock__input {
+.sku-price-stock__input {
     border: none;
     border-bottom: 2px #F33 solid;
-    height: 44px;
     width: 15ch;
     color: #111;
     text-align: right;
@@ -99,10 +122,9 @@ textarea {
     line-height: normal;
     letter-spacing: 0.72px;
 }
-.edit-sku-price-stock__stock {
+.sku-price-stock__stock {
     border: none;
     border-bottom: 2px #F33 solid;
-    height: 44px;
     width: 5ch;
     color: #111;
     text-align: right;
@@ -112,6 +134,91 @@ textarea {
     font-weight: 400;
     line-height: normal;
 }
+
+.edit-promo__container {
+    display: flex;
+    margin-bottom: 48px;
+    gap: 48px;
+}
+
+.edit-promo__descuento-title {
+    color: #000;
+text-align: right;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+.edit-promo__descuento__input {
+    border: none;
+    border-bottom: 2px #F33 solid;
+    width: 5ch;
+    color: #111;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+.edit-promo__descuento, .edit-promo__cuotas {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.edit-promo__cuotas-title {
+    color: #000;
+text-align: right;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+.edit-promo__cuotas-imput {
+    border: none;
+    border-bottom: 2px #F33 solid;
+    width: 5ch;
+    color: #111;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+
+.edit-img__container {
+    display: flex;
+    margin-bottom: 28px;
+    gap: 10px;
+    align-items: flex-end;
+}
+.edit-img {
+    color: #000;
+text-align: right;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.96px;
+}
+.edit-img__att {
+    color: #1F1F1F;
+font-family: Arial;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.56px;
+}
+
 
 /* FOOTER */
 .footer {
