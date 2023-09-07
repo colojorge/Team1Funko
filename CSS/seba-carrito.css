@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&display=swap');
+
+/* DESIGN SYSTEM */
+:root {
+    /* Palette */
+    --primary-solid: #FF3333;
+    --primary-900: rgb(255, 51, 51, 0.9);
+    --primary-500: rgb(255, 51, 51, 0.5);
+    --primary-300: rgb(255, 51, 51, 0.3);
+
+    --secondary-solid: #1d84b5;
+    --secondary-900: rgb(29, 132, 181, 0.9);
+    --secondary-500: rgb(29, 132, 181, 0.5);
+    --secondary-300: rgb(29, 132, 181, 0.3);
+
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+
+    --bg-dark-solid: #30343F;
+    --bg-light-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+
+    /* Typography */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /* Font-sizes */
+    --font-46: 4.6rem; 
+    --font-38: 3.8rem; 
+    --font-30: 3.0rem; 
+    --font-24: 2.4rem; 
+    --font-20: 2rem; 
+    --font-16: 1.6rem; 
+    --font-14: 1.4rem; 
+
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+html {
+    box-sizing: border-box;
+    line-height: 1; /* 1 */
+    font-family: var(--base-font);
+    color: var(--dark-solid);
+}
+header, footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+body {
+    width: 1440px;
+    background: #FFF;
+    margin: auto;
+}
+/* Normalizar IMG */
+img {
+    width: 100%;
+}
+
+/* CARRITO */
+.titulo__carrito__contain{
+    width: 1220px;
+    margin: auto;
+    margin-top: 125px;
+}
+.titulo__carrito {
+    color: #111;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Raleway', sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 5px solid #F33;
+    margin-bottom: 60px;
+}
+
+.detalle {
+    display: flex;
+    align-items: center;
+    width: 1220px;
+    height: 51px;
+    border-radius: 10px;
+    background: #FAFAFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.detalle__producto {
+    color: #000;
+    font-family: 'Inter', sans-serif;font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 50%;
+    padding-left: 10.5%;
+}
+.detalle__cantidad {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 25%;
+    padding-left: 2px;
+}
+.detalle__total {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 25%;
+    padding-left: 8px;
+}
+
+.item {
+    display: flex;
+    width: 1220px;
+    height: 195px;
+    padding: 16px;
+    align-items: center;
+    border-radius: 25px;
+    background: #FAFAFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    margin-bottom: 32px;
+}
+.item__contain {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+    flex-direction: row;
+    width: 50%;
+}
+.item__imagen {
+    width: 118px;
+    height: 118px;
+    flex-shrink: 0;
+}
+.item__contain__txt {
+    display: flex;
+    flex-direction: column;
+}
+.item__nombre {
+    color: #111;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 6px;
+}
+.item__saga {
+    color: #30343F;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.item__precio {
+    color: #333;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.cant__contain {
+    display: flex;
+    width: 25%;
+}
+.cant {
+    display: flex;
+    width: 89px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 0.5px solid #C9C9C9;
+    background: #FFF;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cant__var {
+    display: flex;
+    padding: 0px 4px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cant__var__mas, .cant__var__menos {
+    display: flex;
+    justify-content: center;
+    height: 18px;
+    width: 18px;
+    background: #F24E1E;
+
+}
+
+.item__total {
+    color: #333;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item__eliminar {
+    display: flex;
+    flex-grow: 1;
+    height: 28px;
+    flex-shrink: 0;
+    justify-content: flex-end;
+}
+.item__eliminar img {
+    display: flex;
+    width: 28px;
+
+}
+.resumen__contain__titulo{
+    display: flex;
+    width: 1220px;
+    margin: auto;
+}
+
+.resumen__titulo {
+    color: #111;
+    font-family: Raleway;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: auto;
+    margin-top: 68px;
+    margin-bottom: 26px;
+    margin-right: 0;
+    text-align: end;
+    border-bottom: 5px solid #F33;
+    display: inline-flex;
+    padding-bottom: 0px;
+    gap: 10px;
+}
+
+.resumen {
+    display: flex;
+    width: 1220px;
+    margin: auto;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.resumen__contain {
+    display: inline-flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 10px;
+    background: #FAFAFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.resumen__container__cantidad {
+    display: flex;
+    justify-content: space-between;
+    width: 524px;
+
+}
+.resumen__cantidad__txt {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.resumen__cantidad__num {
+    color: #747474;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.resumen__container__subtotal {
+    display: flex;
+    width: 524px;
+    justify-content: space-between;
+    align-items: center;
+}
+.resumen__subtotal__txt {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.resumen__subtotal__num {
+    color: #747474;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.resumen__container__envio {
+    display: flex;
+    width: 524px;
+    justify-content: space-between;
+    align-items: center;
+}
+.resumen__envio__txt {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.resumen__envio__num {
+    color: #747474;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.resumen__container__total {
+    display: flex;
+    width: 524px;
+    padding-top: 8px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #F33;
+}
+.resumen__total__txt {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.resumen__total__num {
+    color: #747474;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.btb__pagar {
+    display: flex;
+    width: 572px;
+    height: 68.656px;
+    background: #F33;
+    margin-top: 44px;
+    margin-bottom: 128px;
+}
+
+.pagar {
+    display: flex;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    justify-content: center;
+    margin: auto;
+}   
+/* FIN CARRITO */
+
+/* FOOTER */
+.footer {
+    background: var(--bg-dark-solid);
+    padding: var(--spacing-68);
+    padding-bottom: var(--spacing-20);
+}
+
+.footer__copy {
+    color: var(--light-font-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-20);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-top: var(--spacing-36);
+}
