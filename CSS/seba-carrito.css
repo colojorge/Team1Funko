@@ -428,3 +428,124 @@ img {
     text-align: center;
     margin-top: var(--spacing-36);
 }
+
+@media (max-width: 599px) {
+    
+    body {
+        width: 100vw;
+        margin: 0;
+    }
+    header {
+        width: 100%;
+        padding: 0px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .titulo__carrito__contain {
+        display: flex;
+        margin-top: 10px;
+    }
+    .titulo__carrito {
+        font-size: 3.2rem;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .nabvar__menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .detalle {
+        margin-bottom: 24px;
+    }
+    .item {
+        padding: 10px;
+        position: relative;
+        margin-bottom: 24px;
+    }
+    .item__imagen {
+        width: 100px;
+        height: 100px;
+    }
+    .item__contain {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 0;
+        align-items: center;
+    }
+    .item__contain__txt {
+        align-items: center;
+    }
+    .item__nombre {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .item__saga {
+        margin-bottom: 6px;
+    }
+    .contain-cant-eliminar {
+        width: 50%;
+    }
+    .cant {
+        width: 50px;
+    }
+    .cant__var {
+        justify-content: space-around;
+    }
+    .item__eliminar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 15px;
+    }
+    .item__total {
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+    }
+
+
+    .resumen__contain {
+        width: 100%;
+    }
+    .resumen__titulo {
+        margin-top: 0px;
+        margin-right: 22px;
+        margin-bottom: 20px;
+    }
+    .resumen__container__cantidad {
+        width: 100%;
+    }
+    .resumen__container__subtotal .resumen__container__envio .resumen__container__total {
+        width: 100%;
+    }
+    .resumen__container__subtotal {
+        width: 100%;
+    }
+    .resumen__container__envio {
+        width: 100%;
+    }
+    .resumen__container__total {
+        width: 100%;
+    }
+    .btb__pagar {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .footer {
+        padding: 24px;
+    }
+    .footer__copy {
+        display: flex;
+        font-size: 16px;
+        width: 100%;
+        justify-content: center;
+    }
+}
