@@ -150,4 +150,10 @@ header {
 .submenu__link:hover {
     background-color: var(--primary-900);
 }
+.menu-burguer {
+    display: none;
+}
+#menu-input {
+    display: none;
+}
 /* Fin HEADER */

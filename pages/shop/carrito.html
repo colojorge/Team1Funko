@@ -16,44 +16,51 @@
                 <a href="../../index.html">
                     <img src="../../img/branding/logo_light_horizontal.svg" alt="isologotico de la marca funkoshop">
                 </a>
-            </picture> 
-            <ul class="nabvar__menu">
-                <li class="nabvar__item with-submenu">
-                    <a class="nabvar__link with-icon" href="../shop/shop.html">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
-                        <ul class="submenu">
-                            <li class="submenu__item">
-                                <a href="" class="submenu__link">Funkos</a>
-                            </li>
-                            <li class="submenu__item">
-                                <a href="" class="submenu__link">Remeras</a>
-                            </li>
-                            <li class="submenu__item">
-                                <a href="" class="submenu__link">LLaveros</a>
-                            </li>
-                        </ul>
-                </li>
-                <li class="nabvar__item">
-                    <a class="nabvar__link" href="../shop/contacto.html">CONTACTO</a>
-                </li>
-                <li class="nabvar__item">
-                    <a class="nabvar__link" href="../shop/login.html">LOGIN</a>
-                </li>
-                <li class="nabvar__item">
-                    <a class="nabvar__cart" href="../shop/carrito.html"><img src="../../img/icons/cart-icon.svg" alt="icono de carrito"></a>
-                </li>
-        </ul>
+            </picture>
+            <input type="checkbox" id="menu-input">
+            <label class="menu-burguer" for="menu-input">&#9776;</label>
+            <label class="menu-equ" for="menu-input">X</label> 
+            
+                <ul class="nabvar__menu">
+                    <li class="nabvar__item with-submenu">
+                        <a class="nabvar__link with-icon" href="">SHOP<iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                        <!-- ../shop/shop.html -->
+                            <ul class="submenu">
+                                <li class="submenu__item">
+                                    <a href="" class="submenu__link">Funkos</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="" class="submenu__link">Remeras</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a href="" class="submenu__link">LLaveros</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="nabvar__item">
+                        <a class="nabvar__link" href="../shop/contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nabvar__item">
+                        <a class="nabvar__link" href="../shop/login.html">LOGIN</a>
+                    </li>
+                    <li class="nabvar__item">
+                        <a class="nabvar__cart" href="../shop/carrito.html"><img src="../../img/icons/cart-icon.svg" alt="icono de carrito"></a>
+                    </li>
+            </ul>
+            
+            
 
         </nav>
     </header>
     <!-- MAIN -->
     <main>
         <div class="titulo__carrito__contain container">
-            <h2 class="titulo__carrito">CARRITO DE COMPRAS</h2>
+            <h2 class="titulo__carrito">MI CARRITO</h2>
         </div>
         <section class="detalle container">
-            <p class="detalle__producto">DETALLE DE PRODUCTO</p>
-            <p class="detalle__cantidad">CANTIDAD</p>
-            <p class="detalle__total">TOTAL</p>
+            <p class="detalle__producto">Producto</p>
+            <p class="detalle__cantidad">Cantidad</p>
+            <p class="detalle__total">Total</p>
         </section>
         <section class="item container">
             <div class="item__contain">
@@ -116,7 +123,7 @@
         <section class="resumen container">
             <article class="resumen__contain">
                 <div class="resumen__container__cantidad">
-                    <div class="resumen__cantidad__txt">CANTIDAD DE ELEMENTOS</div>
+                    <div class="resumen__cantidad__txt">CANTIDAD</div>
                     <div class="resumen__cantidad__num">3</div>
                 </div>
                 <div class="resumen__container__subtotal">
@@ -142,7 +149,7 @@
     <!-- FOOTER -->
     <footer class="footer"> 
             <nav class="nabvar container">
-              <ul class="nabvar__item">
+              <ul class="footer-nabvar__list">
                 <li class="nabvar__item">
                     <a class="nabvar__link" href="">SHOP</a>
                 </li>
@@ -153,7 +160,7 @@
                     <a class="nabvar__link" href="">CONTACTO</a>
                 </li>
               </ul>
-              <picture>
+              <picture class="footer__logo">
                 <img src="../../img/branding/isotype.svg" alt="isotipo de funkoshop">
             </picture>
         </nav>            
