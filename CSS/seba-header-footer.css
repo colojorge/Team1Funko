@@ -153,6 +153,9 @@ header {
 .menu-burguer {
     display: none;
 }
+.menu-equ{
+    display: none;         
+}
 #menu-input {
     display: none;
 }
