@@ -438,6 +438,7 @@ img {
     }
     .container {
         width: calc(100% - 10px);
+
     }
     header {
         width: 100%;
@@ -453,16 +454,22 @@ img {
         margin-left: 5px;
     }
     .nabvar {
-        display: flex;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        /* margin: 5px; */
+        padding: 0 5px;
         flex-direction: row;
         align-items: center;
-        flex-wrap: wrap;
         justify-content: space-between;
 }
     
     .nabvar__logo {
+        display: inline-flex;
         margin: 10px 0;
-        max-width: 300px;
+        max-width: 80%;
+        /* width: 80%; */
+        flex-basis: 90%;
     }
     .nabvar__menu {
         display: none;
@@ -615,67 +622,71 @@ img {
     }
     
 
-
     /* Hambur Menu */    
 
     .menu-burguer {
-        display: block;
+        display: inline-flex;
         color: #f33;
-        font-size: 40px;
+        font-size: 6ch;
         font-family: sans-serif;
-        padding: 0px;
         border: none;
         cursor: pointer;
-        margin: 5px;
-        width: 36px;  
-        height: 40px;    
-        text-align: center;  
+        position: fixed;
+        top: 3%;
+        right: 5px;     
     }  
     .menu-equ{
-        display:none;
-             
+        display:none;             
     }
     .nabvar__menu {
         display: none;
     }
-      
+    
     #menu-input:checked  ~ .nabvar__menu{
         display:flex;
-        flex-direction: column;
         color: #FFF;
         font-family: "Raleway";
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        padding: 0;
+        padding: 0 0 10px 0;
         margin-bottom: 10px;
-        transition: background 1s ease-in-out ;
-        width: 30%;
-        margin-left: 70%;
+        transition: background 1s ease-in-out;
+        margin-left: 68%;
         align-items: flex-end;
-        
 }
     #menu-input:checked  ~ .menu-burguer{
         display:none;             
     }
     #menu-input:checked  ~ .menu-equ{
-        display: block;
+        display: inline-flex;
         color: #f33;
-        font-size: 30px;
+        font-size: 6ch;
         font-family: sans-serif;
-        padding: 5px;
+        padding: 0;
         border: none;
-        cursor: pointer;
-        margin: 5px;
-        width: 36px;
-        height: 40px;
-        border: 1px solid #f33;
+        cursor: pointer;      
         text-align: center;
-        border-radius: 500px;
-       
-}
+        position: fixed;
+        top: 3%;
+        right: 6px;
+    }
     #menu-input {
         display: none;
+        
+    }
+    /* .prueba {
+        display: block;
+        position: absolute;
+        width: 75px;
+        height: 1000px;
+        background-color: #1d84b5;
+        top: 70px;
+        right: 0;
+        z-index: 110;
+    } */
+    #menu-input:checked .navbar__menu{
+        display:block;             
     }
     .nabvar__item:active {
         background-color: #F33;
@@ -710,5 +721,12 @@ img {
     }
     .footer .nabvar__item .nabvar__link {
         font-size: var(--font-14);
+    }
+    .navbar-container__logo-burguer {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        position: relative;
     }
 }
