@@ -84,6 +84,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-items: center;
 }
 .ul-footer{
     display: flex;
