@@ -4,76 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Funkoshop</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="./assets/img/branding/isotype.svg"
-    />
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./img/branding/isotype.svg"/>
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+<!-- <link rel="stylesheet" href="./CSS/style.css" /> -->
+    <link rel="stylesheet" href="./CSS/coco-style.css" />
   </head>
 
   <body>
     <header>
-      <picture>
-        <img src="assets/img/branding/logo_light_horizontal.svg"
-      /></picture>
-      <nav>
-        <ul>
-          <li><a href="/Shop">Shop</a></li>
-          <li><a href="/Login">Ingresar</a></li>
-          <li><a href="/Contacto">Contacto</a></li>
-          <li><a href="/Carrito">🛒</a></li>
+      <nav class="nav-coco">
+        <picture>
+          <a href="./index.html">
+            <img class="picture-nav-coco"
+              src="./img/branding/logo_light_horizontal.svg" 
+              alt="Isologotipo de la Marca Funkoshop"
+            />
+          </a>
+        </picture>
+        <ul class="enlaces-nav-coco">
+          <li><a class="enlaces-coco" href="./pages/Shop/shop.html">Shop</a></li>
+          <li><a class="enlaces-coco" href="./pages/shop/item.html">Ingresar</a></li>
+          <li><a class="enlaces-coco" href="./pages/shop/contacto.html">Contacto</a></li>
+          <li>  
+            <a class="enlaces-coco" href="./pages/shop/carrito.html">
+              <img src="./img/icons/cart-icon.svg" alt="icono de carrito" />
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="banner-section-coco">
+      <section class="banner-section-coco"> <!-- Inicio banner -->
         <article class="banner-article-coco">
           <h3>Nuevos Ingresos</h3>
           <p>Descubri el próximo Funko Pop de tu colección</p>
-          <a href="./pages/shop.html" class="enlace-boton">
-            <button class="boton-banner-coco">SHOP</button>
+          <a href="./pages/shop/shop.html" class="enlace-boton">
+            <button class="boton-banner-coco">SHOP</button> 
           </a>
         </article>
-      </section>
+      </section> <!-- Fin banner -->
 
-      <section class="primer-section-coco">
+      <section class="section-coco">  <!-- primer bloque -->
         <article class="primer-article-coco">
           <h3>START WARS &&nbsp; THE MANDALORIAN</h3>
           <p>
-            Disfruta de una saga que sigue&nbsp; agregando personajes a su
-            colección.
+            Disfruta de una saga que sigue&nbsp; agregando personajes a su colección.
           </p>
-          <hr class="hr-coco" />
+          <hr class="hr-coco"/> <!-- linea red -->
           <a href="./pages/shop.html" class="enlace-boton">
             <button class="boton-coleccion-coco">VER COLECCIÓN</button>
           </a>
         </article>
         <picture class="picture-mandalorian-coco">
           <img
-            src="./assets/img/star-wars/baby-yoda-1.webp"
+            src="./img/star-wars/baby-yoda-1.webp"
             alt="imagen starwars baby-yoda"
           />
         </picture>
-      </section>
+      </section> <!-- fin primer boque -->
 
-      <section class="segundo-section-coco">
+      <section class="section-coco" > <!-- segundo bloque -->
         <article class="segundo-article-coco">
           <h3>POKEMON INDIGO</h3>
           <p>
             Atrapa todos los que puedas y disfruta de una colección llena de
             amigos.
           </p>
-          <hr class="hr-coco" />
+          <hr class="hr-coco"/> <!-- linea red -->
           <a href="./pages/shop.html" class="enlace-boton">
             <button class="boton-coleccion-coco">VER COLECCIÓN</button>
           </a>
         </article>
-        <picture class="picture-indigo-coco">
-          <img
-            src="./assets/img/pokemon/vulpix-1.webp"
+        <picture>
+          <img  class="picture-indigo-coco"
+            src="./img/pokemon/vulpix-1.webp"
             alt="imagen pokemon indigo vulpix"
           />
         </picture>
@@ -87,7 +92,7 @@
         </article>
         <picture>
           <img
-            src="./assets/img/harry-potter/snape-patronus-1.webp"
+            src="./img/harry-potter/snape-patronus-1.webp"
             alt="imagen harry potter snape patronus indigo vulpix"
           />
         </picture>
@@ -100,7 +105,7 @@
               <a href="">
                 <picture>
                   <img
-                    src="./assets/img/star-wars/trooper-1.webp"
+                    src="./img/star-wars/trooper-1.webp"
                     alt="imagen star wars trooper"
                   />
                 </picture>
@@ -119,7 +124,7 @@
               <a href="">
                 <picture>
                   <img
-                    src="./assets/img/pokemon/pidgeotto-1.webp"
+                    src="./img/pokemon/pidgeotto-1.webp"
                     alt="imagen pokemon pidgeotto"
                   />
                 </picture>
@@ -138,7 +143,7 @@
               <a href="">
                 <picture>
                   <img
-                    src="./assets/img/harry-potter/luna-1.webp"
+                    src="./img/harry-potter/luna-1.webp"
                     alt="imagen harry potter luna"
                   />
                 </picture>
@@ -157,12 +162,12 @@
 
     <footer>
       <ul>
-        <li><a href="/Shop">Shop</a></li>
-        <li><a href="/Login">Ingresar</a></li>
-        <li><a href="/Contacto">Contacto</a></li>
+        <li><a href="./shop/Shop">Shop</a></li>
+        <li><a href="./item/Login">Ingresar</a></li>
+        <li><a href="./shop/Contacto">Contacto</a></li>
       </ul>
       <p>All rights reserved 2023 - Funkoshop</p>
-      <picture> <img src="assets/img/branding/isotype.svg" /></picture>
+      <picture> <img src="./img/branding/isotype.svg" alt="isotipo"/></picture>
     </footer>
   </body>
 </html>
