@@ -84,9 +84,19 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 100%;
 }
 figure {
+  position: relative;
   place-self: center;
   margin: 0px;
   background-color: rgba(128, 128, 128, 0.2);
+}
+
+figure > figcaption {
+  position: absolute;
+  right: 0;
+  padding: 1% 5%;
+  color: azure;
+  background-color: rgba(var(--color-red-orange), 1);
+  float: right;
 }
 
 #productCarousel > figure:nth-child(2) {
