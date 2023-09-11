@@ -7,18 +7,20 @@
 }
 body {
   font-family: "Raleway", sans-serif;
-  display: grid;
   background-color: rgba(var(--color-tuna), 1);
 }
 
+/*6*/
 .product {
-  background-color: azure;
+  background-color: white;
   display: flex;
-  height: 100%;
   align-items: center;
   justify-content: center;
 }
 
+.productImg > img {
+  width: 100%;
+}
 .productData > button {
   background-color: rgba(var(--color-tuna), 1);
 }
@@ -34,7 +36,84 @@ body {
 #mediosDePago {
   cursor: pointer;
 }
+#mediosDePago > a {
+  text-decoration: underline;
+  text-underline-position: under;
+}
 
 .productData > p:nth-child(8) {
   color: rgba(var(--color-eastern-blue), 1);
+}
+.productData > input {
+  text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.productData > sub {
+  color: dimgray;
+  font-weight: 600;
+}
+
+.productData > p:nth-child(3) {
+  font-size: large;
+}
+.productData > p:nth-child(4) {
+  font-size: x-large;
+}
+
+/*7*/
+#relatedProducts {
+  background-color: white;
+}
+
+#relatedProducts > h1 {
+  margin: 0 0 0 11%;
+}
+#productCarousel {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 10% 1fr 1fr 1fr 10%;
+  grid-template-areas: ". figure1 figure2 figure3 .";
+  gap: 1%;
+}
+#productCarousel > figure > img {
+  width: 100%;
+}
+figure {
+  place-self: center;
+  margin: 0px;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+#productCarousel > figure:nth-child(2) {
+  grid-area: figure1;
+}
+
+#productCarousel > figure:nth-child(1) {
+  grid-area: figure3;
+}
+#productCarousel > figure:nth-child(3) {
+  grid-area: figure2;
+}
+
+#productCarousel > button {
+  background: none;
+  border: 1px solid gray;
+  color: gray;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+#carouselBtnLeft {
+  justify-self: right;
+}
+
+#carouselBtnRight {
+  justify-self: left;
 }
