@@ -34,22 +34,25 @@ main {
 }
 h2{
    text-transform: uppercase; 
+   font-size: 40px;
 }
 form{
     height: 30vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+}
+label{
+    font-size: 20px;
 }
 input{
     border: none;
     border-bottom:2px solid red;
+    margin-left: 60px;
 }
 .section-top-form{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     height: 15vh;
 }
@@ -57,12 +60,17 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 button{
     background-color: red;
     padding: 10px 15px;
-    border: none;
+    border: 1px solid rgb(175, 175, 175);
     color: #fff;
+    margin: 10px 10px;
+}
+.input-radio{
+    margin: 10px 10px;
 }
 .a-form{
     color: blue;
