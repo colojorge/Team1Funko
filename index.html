@@ -6,66 +6,57 @@
     <title>Home | Funkoshop</title>
     <link rel="icon" type="image/png" href="./img/branding/isotype.svg"/>
     <link rel="stylesheet" href="./CSS/normalize.css" />
-    <!-- <link rel="stylesheet" href="./CSS/style.css" /> -->
+<!-- <link rel="stylesheet" href="./CSS/style.css" /> -->
     <link rel="stylesheet" href="./CSS/coco-style.css" />
   </head>
+
   <body>
     <header>
-      <nav class="nav-coco container-coco">
-        <picture class="picture-nav-coco">
+      <nav class="nav-coco">
+        <picture>
           <a href="./index.html">
-            <img src="./img/branding/logo_light_horizontal.svg" 
-            alt="Isologotipo de la Marca Funkoshop"/>
+            <img class="picture-nav-coco"
+              src="./img/branding/logo_light_horizontal.svg" 
+              alt="Isologotipo de la Marca Funkoshop"
+            />
           </a>
         </picture>
         <ul class="enlaces-nav-coco">
-          <li class="with-link-submenu">
-            <a class="enlaces-coco with-icon" href="./pages/Shop/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-            <ul class="submenuShop-coco">
-              <li class="subEnlace-coco">
-                <a class="subEnlaceLink-coco">Funkos</a>
-              </li>
-              <li class="subEnlace-coco">
-                <a class="subEnlaceLink-coco">Remeras</a>
-              </li>
-              <li class="subEnlace-coco">
-                <a class="subEnlaceLink-coco">Llaveros</a>
-              </li>
-            </ul>
-          </li>
-
-          <li><a class="enlaces-coco" href="./pages/shop/item.html">CONTACTO</a></li>
-          <li><a class="enlaces-coco" href="./pages/shop/contacto.html">LOGIN</a></li>
+          <li><a class="enlaces-coco" href="./pages/Shop/shop.html">Shop</a></li>
+          <li><a class="enlaces-coco" href="./pages/shop/item.html">Ingresar</a></li>
+          <li><a class="enlaces-coco" href="./pages/shop/contacto.html">Contacto</a></li>
           <li>  
-            <a class="enlace-carrito-coco" href="./pages/shop/carrito.html">
+            <a class="enlaces-coco" href="./pages/shop/carrito.html">
               <img src="./img/icons/cart-icon.svg" alt="icono de carrito" />
             </a>
           </li>
         </ul>
       </nav>
     </header>
-    <!-- Inicio banner -->
-    <section class="banner-section-coco"> 
-      <article class="banner-article-coco">
-        <h3>Nuevos Ingresos</h3>
-        <p>Descubri el próximo Funko Pop de tu colección</p>
-        <a href="./pages/shop/shop.html" class="enlace-boton">
-          <button class="boton-banner-coco">SHOP</button> 
-        </a>
-      </article>
-    </section> <!-- Fin banner -->
-    
-    <main class="main-coco">
-      <!-- primer bloque -->
-      <section class="section-coco container-coco">
-        <article class="section__article-coco">
+
+    <main>
+      <section class="banner-section-coco"> <!-- Inicio banner -->
+        <article class="banner-article-coco">
+          <h3>Nuevos Ingresos</h3>
+          <p>Descubri el próximo Funko Pop de tu colección</p>
+          <a href="./pages/shop/shop.html" class="enlace-boton">
+            <button class="boton-banner-coco">SHOP</button> 
+          </a>
+        </article>
+      </section> <!-- Fin banner -->
+
+      <section class="section-coco">  <!-- primer bloque -->
+        <article class="primer-article-coco">
           <h3>START WARS &&nbsp; THE MANDALORIAN</h3>
           <p>
-            Disfruta de una saga que sigue agregando personajes a su colección.
+            Disfruta de una saga que sigue&nbsp; agregando personajes a su colección.
           </p>
-          <a href="./pages/shop.html">VER COLECCIÓN</a>
+          <hr class="hr-coco"/> <!-- linea red -->
+          <a href="./pages/shop.html" class="enlace-boton">
+            <button class="boton-coleccion-coco">VER COLECCIÓN</button>
+          </a>
         </article>
-        <picture>
+        <picture class="picture-mandalorian-coco">
           <img
             src="./img/star-wars/baby-yoda-1.webp"
             alt="imagen starwars baby-yoda"
@@ -73,15 +64,17 @@
         </picture>
       </section> <!-- fin primer boque -->
 
-      <!-- segundo bloque -->
-      <section class="section-coco container-coco">
-        <article class="section__article-coco">
+      <section class="section-coco" > <!-- segundo bloque -->
+        <article class="segundo-article-coco">
           <h3>POKEMON INDIGO</h3>
           <p>
             Atrapa todos los que puedas y disfruta de una colección llena de
             amigos.
           </p>
-          <a href="./pages/shop.html">VER COLECCIÓN</a>
+          <hr class="hr-coco"/> <!-- linea red -->
+          <a href="./pages/shop.html" class="enlace-boton">
+            <button class="boton-coleccion-coco">VER COLECCIÓN</button>
+          </a>
         </article>
         <picture>
           <img  class="picture-indigo-coco"
@@ -90,6 +83,7 @@
           />
         </picture>
       </section>
+
       <section>
         <article>
           <h3>HARRY POTTER</h3>
@@ -175,6 +169,5 @@
       <p>All rights reserved 2023 - Funkoshop</p>
       <picture> <img src="./img/branding/isotype.svg" alt="isotipo"/></picture>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   </body>
 </html>

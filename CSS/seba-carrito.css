@@ -69,6 +69,11 @@ img {
     width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 711b0c45c5b38aa06302f7c1e8c01ab74ffd0327
 /* CARRITO */
 .titulo__carrito__contain{
     margin: auto;
@@ -431,34 +436,78 @@ img {
 @media (max-width: 599px) {
     
     body {
-        width: 100vw;
+        width: 100%;
         margin: 0;
+    }
+    .container {
+        width: calc(100% - 10px);
+
     }
     header {
         width: 100%;
         padding: 0px;
-    }
-    .container {
-        max-width: 100%;
     }
     .titulo__carrito__contain {
         display: flex;
         margin-top: 10px;
     }
     .titulo__carrito {
-        font-size: 3.2rem;
-        margin: 0 auto;
+        font-size: var(--font-20);
         margin-bottom: 20px;
+        margin-left: 5px;
+    }
+    .nabvar {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 0;
+        padding: 0 5px;
+        align-items: center;
+        justify-content: space-between;
+}
+    
+    .nabvar__logo {
+        display: inline-flex;
+        margin: 10px 0;
+        max-width: 80%;
     }
     .nabvar__menu {
-        display: flex;
+        display: none;
         flex-direction: column;
+        gap: var(--spacing-8);
+        padding: var(--spacing-8) 0;
+    }
+    .nabvar__link {
+        font-size: 1.8rem;
+    }
+    .nabvar__link {
+        color: #FFF;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: var(--spacing-8) 0;
+        display: inline-block;
+        transition: background 0.3s ease-in-out ;
+        
+}
+    .nabvar__item {
+        width: 100%;
+        border-bottom: 1px solid #F33;
+    }
+    .nabvar__item img {
+        width: 32px;
+        height: 32px;
+        margin-bottom: var(--spacing-8);
     }
     .detalle {
         margin-bottom: 24px;
     }
+    .detalle__producto {
+        width: 46%;
+    }
     .item {
-        padding: 10px;
+        padding: 0px;
         position: relative;
         margin-bottom: 24px;
     }
@@ -486,20 +535,15 @@ img {
     .item__saga {
         margin-bottom: 6px;
     }
-    .contain-cant-eliminar {
-        width: 50%;
-    }
-    .cant {
-        width: 50px;
-    }
-    .cant__var {
-        justify-content: space-around;
+    .item__eliminar img {
+        width: 30px;
+        height: 30px;
     }
     .item__eliminar {
         position: absolute;
         top: 0;
         right: 0;
-        margin: 15px;
+        margin: 1%;
     }
     .item__total {
         display: flex;
@@ -507,14 +551,43 @@ img {
         align-items: center;
     }
 
+    .contain-cant-eliminar {
+        width: 50%;
+    }
+    .cant {
+        width: 50px;
+    }
+    .cant__contain {
+        flex-direction: column;
+        position: relative;
+        padding: 25px 0;
+        width: 40%;
+    }
+    .cant__var {
+        justify-content: space-around;
+        padding: 0;
+    }
+    .cant__var__mas {
+        position: absolute;
+        top: 0;
+        margin-left: 16px;
+
+    }
+    .cant__var__menos {
+        position: absolute;
+        bottom: 0;
+        margin-left: 16px;
+    }  
+
 
     .resumen__contain {
         width: 100%;
     }
     .resumen__titulo {
         margin-top: 0px;
-        margin-right: 22px;
+        margin-left: 12px;
         margin-bottom: 20px;
+        font-size: var(--font-20);
     }
     .resumen__container__cantidad {
         width: 100%;
@@ -531,20 +604,127 @@ img {
     .resumen__container__total {
         width: 100%;
     }
+    .pagar {
+        font-size: var(--font-30);
+    }
     .btb__pagar {
         display: flex;
-        width: 80%;
+        width: 90%;
+        width: calc(100% - 40px);
+        height: auto;
         margin: auto;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 20px;
+        margin-bottom: 32px;
+        padding: 10px 0;
+        border-radius: 0px 10px 0 10px;
     }
+    
+
+    /* Hambur Menu */    
+
+    .menu-burguer {
+        display: inline-flex;
+        color: #f33;
+        font-size: 6ch;
+        font-family: sans-serif;
+        border: none;
+        cursor: pointer;
+        position: fixed;
+        right: 5px;     
+    }  
+    .menu-equ{
+        display:none;             
+    }
+    .nabvar__menu {
+        display: none;
+    }
+    
+    #menu-input:checked  ~ .nabvar__menu{
+        display:flex;
+        color: #FFF;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 0 0 10px 0;
+        transition: background 1s ease-in-out;
+        text-align: end;
+        width: 100%;
+        margin-left: 65%;
+        align-items: flex-end;
+}
+    #menu-input:checked  ~ .menu-burguer{
+        display:none;             
+    }
+    #menu-input:checked  ~ .menu-equ{
+        display: inline-flex;
+        color: #f33;
+        font-size: 6ch;
+        font-family: sans-serif;
+        padding: 0;
+        border: none;
+        cursor: pointer;      
+        text-align: center;
+        position: fixed;
+        top: 3%;
+        right: 6px;
+    }
+    #menu-input {
+        display: none;
+        
+    }
+    /* .prueba {
+        display: block;
+        position: absolute;
+        width: 75px;
+        height: 1000px;
+        background-color: #1d84b5;
+        top: 70px;
+        right: 0;
+        z-index: 110;
+    } */
+    #menu-input:checked .navbar__menu{
+        display:block;             
+    }
+    .nabvar__item:active {
+        background-color: #F33;
+    }
+
+    /* FOOTER */
+
     .footer {
         padding: 24px;
+        padding-bottom: 10px;
     }
     .footer__copy {
         display: flex;
         font-size: 16px;
         width: 100%;
         justify-content: center;
+    }
+    .footer__logo {
+        width: 65px;
+        margin-right: 0;
+    }
+    .footer-nabvar__list {
+        width: 30%;
+    }
+    .footer .nabvar__item {
+        width: 100%;
+        border: none;
+    }
+    .footer .nabvar__item:active {
+        border: none;
+        background-color: rgb(240, 39, 39);
+    }
+    .footer .nabvar__item .nabvar__link {
+        font-size: var(--font-14);
+    }
+    .navbar-container__logo-burguer {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        position: relative;
     }
 }
