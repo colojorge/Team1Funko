@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root{
+  font-size: 10px;
+}
+
+html {
+  box-sizing: border-box;
+  line-height: 1.15; /* 1 */
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/*  HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+a {
+text-decoration: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+ol, ul {
+  list-style: none;
+list-style-type: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Normalizar IMG */
+img {
+  width: 100%;
+}
+/* 1. Add the correct box sizing in Firefox. * 2. Show the overflow in Edge and IE. */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+/* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers. */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1.6em; /* 2 */
+}
+/* Remove the gray background on active links in IE 10. */
+a {
+  background-color: transparent;
+}
+/* 1. Remove the bottom border in Chrome 57-
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+/* Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong {
+  font-weight: bolder;
+}
+/* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers. */
+code, kbd, samp {
+  font-family: monospace, monospace; /* 1 */
+  /* font-size: 100%; */
+  font-size: 1.6em; /* 2 */
+}
+/* Add the correct font size in all browsers. */
+small {
+  /* font-size: 80%; */
+  font-size: 1.28rem;
+}
+/* Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+sub, sup {
+  /* font-size: 75%; */
+  font-size: 1.2rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Remove the border on images inside links in IE 10. */
+img {
+  border-style: none;
+}
+/* 1. Change the font styles in all browsers.
+* 2. Remove the margin in Firefox and Safari. */
+button, input,
+optgroup, select, textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1; /* 1 */
+  margin: 0; /* 2 */
+}
+/* Show the overflow in IE. * 1. Show the overflow in Edge. */
+button, input { /* 1 */
+  overflow: visible;
+}
+/* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox. */
+button, select { /* 1 */
+  text-transform: none;
+}
+/* Correct the padding in Firefox. */
+fieldset {
+  padding: 0;
+}
+/* 1. Correct the text wrapping in Edge and IE.
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+* 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+/* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress {
+  vertical-align: baseline;
+}
+/* Remove the default vertical scrollbar in IE 10+. */
+textarea {
+  overflow: auto;
+}
+/* 1. Add the correct box sizing in IE 10.
+* 2. Remove the padding in IE 10. */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+/* Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/* 1. Correct the odd appearance in Chrome and Safari.
+* 2. Correct the outline style in Safari. */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  appearance: textfield;
+  outline-offset: -2px; /* 2 */
+}
+/* Remove the inner padding in Chrome and Safari on macOS. */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/* 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+/* Add the correct display in all browsers.   */
+summary {
+  display: list-item;
+}
+/* Add the correct display in IE 10+. */
+template {
+  display: none;
+}
+/* Add the correct display in IE 10. */
+[hidden] {
+  display: none;
+}
+
+/* DESIGN SYSTEM */
+:root {
+  /* Palette */
+  --primary-solid: #FF3333;
+  --primary-900: rgb(255, 51, 51, 0.9);
+  --primary-500: rgb(255, 51, 51, 0.5);
+  --primary-300: rgb(255, 51, 51, 0.3);
+
+  --secondary-solid: #1d84b5;
+  --secondary-900: rgb(29, 132, 181, 0.9);
+  --secondary-500: rgb(29, 132, 181, 0.5);
+  --secondary-300: rgb(29, 132, 181, 0.3);
+
+  --dark-solid: #1F1F1F;
+  --dark-900: rgb(31, 31, 31, 0.9);
+  --dark-500: rgb(31, 31, 31, 0.5);
+  --dark-300: rgb(31, 31, 31, 0.3);
+
+  --bg-dark-solid: #30343F;
+  --bg-light-solid: #FAFAFF;
+  --light-font-solid: #FFFFFF;
+
+  /* Typography */
+  --base-font: 'Inter', sans-serif;
+  --alternative-font: 'Raleway', sans-serif;
+
+  /* Font-sizes */
+  --font-46: 4.6rem; 
+  --font-38: 3.8rem; 
+  --font-30: 3.0rem; 
+  --font-24: 2.4rem; 
+  --font-20: 2rem; 
+  --font-16: 1.6rem; 
+  --font-14: 1.4rem; 
+
+  /* Spacings */
+  --spacing-128: 12.8rem;
+  --spacing-68: 6.8rem;
+  --spacing-36: 3.6rem;
+  --spacing-28: 2.8rem;
+  --spacing-24: 2.4rem;
+  --spacing-20: 2rem;
+  --spacing-16: 1.6rem;
+  --spacing-12: 1.2rem;
+  --spacing-8: 0.8rem;
+}
+
+body {
+  width: 1440px;
+  background: #FFF;
+  margin: auto;
+}
+
+/* Normalizar IMG */
+img {
+  width: 100%;
+}
