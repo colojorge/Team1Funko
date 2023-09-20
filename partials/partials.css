@@ -127,3 +127,52 @@ figure > figcaption {
 #carouselBtnRight {
   justify-self: left;
 }
+
+/*5*/
+#productList {
+  padding: 0 5% 0 5%;
+  background-color: aliceblue;
+}
+
+.fa-pen {
+  color: rgba(var(--color-eastern-blue), 1);
+}
+.fa-magnifying-glass {
+  padding-right: 1%;
+}
+
+.fa-trash-can {
+  color: rgba(var(--color-red-orange), 1);
+}
+.fa-square-plus {
+  color: rgba(var(--color-red-orange), 1);
+}
+table {
+  width: 100%;
+}
+tbody {
+  text-align: center;
+}
+#searchProductSection > input[type="text"] {
+  min-width: 25%;
+}
+#productListTitle {
+  padding: 1%;
+  text-align: left;
+}
+#productListAdd {
+  text-align: right;
+}
+
+#searchProductSection {
+  padding: 1%;
+}
+
+figure > p,
+figure > h1 {
+  margin: 0;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+}
