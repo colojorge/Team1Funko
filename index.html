@@ -6,50 +6,62 @@
     <title>Home | Funkoshop</title>
     <link rel="icon" type="image/png" href="./img/branding/isotype.svg"/>
     <link rel="stylesheet" href="./CSS/normalize.css" />
-<!-- <link rel="stylesheet" href="./CSS/style.css" /> -->
     <link rel="stylesheet" href="./CSS/coco-style.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="nav-coco">
-        <picture>
+    <header class="header-coco">
+      <nav class="nav-coco container-coco">
+        <picture class="picture-nav-coco">
           <a href="./index.html">
-            <img class="picture-nav-coco"
-              src="./img/branding/logo_light_horizontal.svg" 
-              alt="Isologotipo de la Marca Funkoshop"
-            />
+            <img src="./img/branding/logo_light_horizontal.svg" 
+            alt="Isologotipo de la Marca Funkoshop"/>
           </a>
         </picture>
         <ul class="enlaces-nav-coco">
-          <li><a class="enlaces-coco" href="./pages/Shop/shop.html">Shop</a></li>
-          <li><a class="enlaces-coco" href="./pages/shop/item.html">Ingresar</a></li>
-          <li><a class="enlaces-coco" href="./pages/shop/contacto.html">Contacto</a></li>
+          <li class="with-link-submenu">
+            <a class="enlaces-coco with-icon" href="./pages/Shop/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+            <ul class="submenuShop-coco">
+              <li class="subEnlace-coco">
+                <a class="subEnlaceLink-coco">Funkos</a>
+              </li>
+              <li class="subEnlace-coco">
+                <a class="subEnlaceLink-coco">Remeras</a>
+              </li>
+              <li class="subEnlace-coco">
+                <a class="subEnlaceLink-coco">Llaveros</a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a class="enlaces-coco" href="./pages/shop/item.html">CONTACTO</a></li>
+          <li><a class="enlaces-coco" href="./pages/admin/register.html">LOGIN</a></li>
           <li>  
-            <a class="enlaces-coco" href="./pages/shop/carrito.html">
+            <a class="enlace-carrito-coco" href="./pages/shop/carrito.html">
               <img src="./img/icons/cart-icon.svg" alt="icono de carrito" />
             </a>
           </li>
         </ul>
       </nav>
     </header>
-
-    <main>
-      <section class="banner-section-coco"> <!-- Inicio banner -->
-        <article class="banner-article-coco">
-          <h3>Nuevos Ingresos</h3>
-          <p>Descubri el próximo Funko Pop de tu colección</p>
-          <a href="./pages/shop/shop.html" class="enlace-boton">
-            <button class="boton-banner-coco">SHOP</button> 
-          </a>
-        </article>
-      </section> <!-- Fin banner -->
-
-      <section class="section-coco">  <!-- primer bloque -->
-        <article class="primer-article-coco">
+    <!-- Inicio banner -->
+    <section class="banner-section-coco"> 
+      <article class="banner-article-coco">
+        <h3>Nuevos Ingresos</h3>
+        <p>Descubri el próximo Funko Pop de tu colección</p>
+        <a href="./pages/shop/shop.html" class="enlace-boton">
+          <button class="boton-banner-coco">SHOP</button> 
+        </a>
+      </article>
+    </section> <!-- Fin banner -->
+    
+    <main class="main-coco">
+      <!-- primer bloque -->
+      <section class="section-coco container-coco">
+        <article class="secction__article-coco">
           <h3>START WARS &&nbsp; THE MANDALORIAN</h3>
           <p>
-            Disfruta de una saga que sigue&nbsp; agregando personajes a su colección.
+            Disfruta de una saga que sigue agregando personajes a su colección.
           </p>
           <hr class="hr-coco"/> <!-- linea red -->
           <a href="./pages/shop.html" class="enlace-boton">
@@ -63,9 +75,9 @@
           />
         </picture>
       </section> <!-- fin primer boque -->
-
-      <section class="section-coco" > <!-- segundo bloque -->
-        <article class="segundo-article-coco">
+      <!-- segundo bloque -->
+      <section class="section-coco container-coco">
+        <article class="secction__article-coco">
           <h3>POKEMON INDIGO</h3>
           <p>
             Atrapa todos los que puedas y disfruta de una colección llena de
@@ -82,13 +94,16 @@
             alt="imagen pokemon indigo vulpix"
           />
         </picture>
-      </section>
-
-      <section>
-        <article>
+      </section> <!-- Fin segundo bloque -->
+      <!-- tercer bloque -->
+      <section class="section-coco container-coco">
+        <article class="secction__article-coco">
           <h3>HARRY POTTER</h3>
           <p>Revive los recuerdos de una saga llena de magia y encanto.</p>
-          <a href="./pages/shop.html">VER COLECCIÓN</a>
+          <hr class="hr-coco"/> <!-- linea red -->
+          <a href="./pages/shop.html">
+            <button class="boton-coleccion-coco">VER COLECCIÓN</button>
+          </a>  
         </article>
         <picture>
           <img
@@ -96,62 +111,60 @@
             alt="imagen harry potter snape patronus indigo vulpix"
           />
         </picture>
-      </section>
-      <section>
-        <h2>ÚLTIMOS LANZAMIENTOS</h2>
-        <ul>
-          <li>
-            <article>
-              <a href="">
-                <picture>
-                  <img
-                    src="./img/star-wars/trooper-1.webp"
-                    alt="imagen star wars trooper"
-                  />
+      </section> <!-- Fin tercer bloque -->
+
+      <section class="slider container-coco">
+        <h2 class="slider__title">ÚLTIMOS LANZAMIENTOS</h2>
+        <ul class="slider__items">
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">NUEVO</span>
+                  <img class="card-item__img--front" src="./img/star-wars/trooper-1.webp" alt="imagen star wars trooper"/>
+                  <img class="card-item__img--back" src="./img/star-wars/trooper-box.webp" alt="imagen star wars trooper en caja"/>
                 </picture>
-                <div>
-                  <p>STAR WARS</p>
-                  <h4>STORMTROOPER LIGHTSABER</h4>
-                  <p>$ 1799,99</p>
-                  <p>3 CUOTAS SIN INTERÉS</p>
+                <div class="card-item__content">
+                  <p class="card-item__licence">STAR WARS</p>
+                  <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
             </article>
           </li>
 
-          <li>
-            <article>
-              <a href="">
-                <picture>
-                  <img
-                    src="./img/pokemon/pidgeotto-1.webp"
-                    alt="imagen pokemon pidgeotto"
-                  />
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">NUEVO</span>
+                  <img class="card-item__img--front" src="./img/pokemon/pidgeotto-1.webp"  alt="imagen pokemon pidgeotto"/>
+                  <img class="card-item__img--back" src="./img/pokemon/pidgeotto-box.webp"  alt="imagen pokemon pidgeotto en caja"/>
                 </picture>
-                <div>
-                  <p>POKEMON</p>
-                  <h4>PIDGEOTTO</h4>
-                  <p>$ 1799,99</p>
-                  <p>3 CUOTAS SIN INTERÉS</p>
+                <div class="card-item__content">
+                  <p class="card-item__licence">POKEMON</p>
+                  <h4 class="card-item__name">PIDGEOTTO</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
             </article>
           </li>
 
-          <li>
-            <article>
-              <a href="">
-                <picture>
-                  <img
-                    src="./img/harry-potter/luna-1.webp"
-                    alt="imagen harry potter luna"
-                  />
+          <li class="slider__item">
+            <article class="card-item">
+              <a class="card-item__link" href="">
+                <picture class="card-item__cover">
+                  <span class="card-item__tag">NUEVO</span>
+                  <img class="card-item__img--front" src="./img/harry-potter/luna-1.webp" alt="imagen harry potter luna"/>
+                  <img class="card-item__img--back" src="./img/harry-potter/luna-box.webp" alt="imagen harry potter luna en caja"/>
                 </picture>
-                <div>
-                  <p>HARRY POTTER</p>
-                  <h4>LUNA LOVEGOOD LION MASK</h4>
-                  <p>$ 1799,99</p>
-                  <p>3 CUOTAS SIN INTERÉS</p>
+                <div class="card-item__content">
+                  <p class="card-item__licence">HARRY POTTER</p>
+                  <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                  <p class="card-item__price">$ 1799,99</p>
+                  <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
               </a>
             </article>
@@ -160,14 +173,18 @@
       </section>
     </main>
 
-    <footer>
-      <ul>
-        <li><a href="./shop/Shop">Shop</a></li>
-        <li><a href="./item/Login">Ingresar</a></li>
-        <li><a href="./shop/Contacto">Contacto</a></li>
-      </ul>
-      <p>All rights reserved 2023 - Funkoshop</p>
-      <picture> <img src="./img/branding/isotype.svg" alt="isotipo"/></picture>
+    <footer class="footer-coco">
+      <nav class="nav-coco container-coco">
+        <ul class="footer-enlaces">
+          <li><a class="footer-coco__enlaces" href="./pages/shop/shop.html">Shop</a></li>
+          <li><a class="footer-coco__enlaces" href="./pages/admin/register.html">Registrarse</a></li>
+          <li><a class="footer-coco__enlaces" href="./pages/admin/login.html">Ingresar</a></li>
+          <li><a class="footer-coco__enlaces" href="./pages/shop/contacto.html">Contacto</a></li>
+        </ul>
+        <picture><img src="./img/branding/isotype.svg" alt="isotipo"/></picture>
+      </nav>
+      <p class="footer-coco__copy">All rights reserved 2023 - Funkoshop</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   </body>
 </html>
