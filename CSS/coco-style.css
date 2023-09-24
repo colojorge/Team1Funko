@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); */
 * {
     padding: 0;
     margin: 0;
@@ -11,50 +11,95 @@ html {
 .enlace-boton {
     text-decoration: none;
 }
-.section-coco { 
-    display: flex;
-    align-items: center;
-    width: 1440px;
-    height: 600px;
-}
+/* LINEA ROJA ARTICLE */
 .hr-coco {
-    border: 3px solid #FF3333;
-    margin: 28px 0px 0px;
+    border: 2px solid #FF3333;
+    margin: 10px 0px 0px;
 }
-
+.container-coco {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 0;
+}
+img {
+    width: 100%;
+}
 
 /* ESTILOS NAV */
+header {
+    background-color: #30343F;
+    padding: 36px;
+}
+
 .nav-coco {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 1440px;
-    height: 144px;
-    background-color: #30343F;
+    align-items: center
 }
-/* imagen nav */
-.picture-nav-coco {
-    margin-left: 110px;
-  
+
+/* IMAGENES */
+.picture-nav-colo {
+    max-width: 300px;
 }
-/* enlaces nav */
+.enlace-carrito-coco>img {
+    padding-left: 16px;
+}
+
+/* NAV ENLACES */
 .enlaces-nav-coco {
     list-style: none;
     display: flex; 
     justify-content: space-around; 
     align-items: center;
-    margin-right: 110px;
-    width: 406px;
-    height: 31px;
+    gap: 20px;
 }
-
 .enlaces-coco {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
     color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
     font-weight: 500;
     font-size: 2em;
+    padding: 8px 16px;
     line-height: 23.48px;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+.enlaces-coco:hover {
+    background-color: #fc4646;
+    border-radius: 10px;
+}
+
+/* estilos a todos los icon: los items del shop en el header */
+.with-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+/* al pasar por el submenuShop-coco se aplica el hover  */
+.with-link-submenu:hover .submenuShop-coco {
+    display: block;
+    z-index: 1;
+}
+/* menu del shop del header */
+.submenuShop-coco {
+    display: none;
+    width: 150px;
+    position: absolute;
+    background-color: #30343F;
+    /* z-index: 3; */
+}
+/* estilos a los li de subMenu shop */
+.subEnlaceLink-coco {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    font-size: medium;
+    transition: background .3s ease-in-out;
+}
+.subEnlaceLink-coco:hover {
+    background-color: #fc4646;
+    border-radius: 10px;
 }
 
 /* ESTILOS BANNER */
@@ -66,15 +111,28 @@ html {
     background-image: url("../img/funkos-banner.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 77%;
+    /* background-position: 0% 77%; */
+    background-attachment: fixed;
+    position: relative;
+}
+/*capa entre banner/elementos:h3, p, a (habría 3 capas)*/
+.banner-section-coco::before { /*antes de esta seccion*/
+    content: ''; /*siempre poner un content, en este caso vacio*/
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px) brightness(.9);
 }
 .banner-article-coco {
     width: 397px;
     height: 168px;
-    position: relative;
-    margin: 110px 0px 0px 105px;
+    margin: 100px 0px 0px 105px;
     color: #ffffff;
-    /* background-color: aquamarine; */
+    z-index: 2;
+    position: relative;
 }
 .banner-article-coco h3 {
     display: inline-block;
@@ -96,10 +154,9 @@ html {
     margin: 5px;
 }
 .boton-banner-coco {
-    /* display: flex;
-    justify-content: center; */
+    justify-content: center; 
     align-items: center;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
     width: 211px;
     height: 47px;
     border-radius: 50px;
@@ -109,33 +166,36 @@ html {
     line-height: 24.2px;
     color: #111111;
     margin-top: 45px;
-    transition: 0.8s all;
+    transition: all .3s ease-in-out;
     cursor: pointer;
 }
 .boton-banner-coco:hover {
-    background-color: rgba(255, 255, 255, 0.407);
+    background-color: #fc4646;
     color: white;
     font-size: 2.2em;
 }
 
-/* PRIMERA SECTION BLOQUE */
-.primer-article-coco {
-    width: 645px;
-    height: 297px;
-    margin-left: 110px;
+/* SECTION BLOQUES */
+.section-coco { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 600px; 
 }
-
-.primer-article-coco h3 {
+.section__article-coco {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.secction__article-coco h3 {
     width: 441px;
-    height: 108px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 4.6em;
     line-height: 54px;
     color: #111111;
 }
-
-.primer-article-coco P {
+.secction__article-coco P {
     width: 458px;
     height: 56px;
     font-family: 'Raleway', sans-serif;
@@ -145,33 +205,10 @@ html {
     color: #4F4F4F;
 }
 
-/* SEGUNDA SECTION BLOQUE */
-.segundo-article-coco {
+/* SECTION SEGUNDO BLOQUE */
+.section-coco:nth-child(2) .secction__article-coco {
     order: 2;
-    width: 645px;
-    height: 249px;
-}
-.segundo-article-coco h3 {
-    width: 403px;
-    height: 54px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 4.6em;
-    line-height: 54px;
-    color: #111111;
-}
-.segundo-article-coco P {
-    width: 458px;
-    height: 56px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 2.4em;
-    line-height: 28.18px;
-    color: #333333;
-}
-
-.picture-indigo-coco {
-    padding: 0px 63px 0px 110px;
+    height: 249px; 
 }
 
 /* BOTON SECTION BLOQUE */
@@ -180,16 +217,239 @@ html {
     height: 65px;
     border-radius: 50px;
     background-color: #30343F;
-    margin: 35px 0px 0px;
+    margin-top: 25px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 2.4em;
     line-height: 29.05px;
     color: #FFFFFF;
-    transition: 1s all;
+    transition: backgroun .3s ease-in-out;
     cursor: pointer;
 }
 .boton-coleccion-coco:hover {
-    background-color: #30343f9e;
+    background-color: #fc4646;
     font-size: 2.5em;
 }
+
+/**** SECCION SLIDER *****/
+.slider {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+    margin: 68px auto;
+
+}
+
+.slider__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.6em;
+    line-height: 54px;
+    font-weight: 700;
+}
+
+.slider__items {
+    display: flex;
+    gap: 24px;
+}
+
+.card-item__content {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+}
+
+.card-item__licence {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #333333;
+}
+.card-item__name {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #111111;
+}
+.card-item__price {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #333333;
+}
+.card-item__promo {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #1D84B5;
+}
+
+.card-item__cover {
+    display: flex;
+    position: relative; /*para que el NUEVO QUEDE en el bloque de la imagen*/
+}
+
+.card-item__tag {
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 16.94px;
+    background-color: #FF3333;
+    padding: 8px 12px;
+    /* estas dos lineas es para posicionar el NUEVO a la derecha */
+    position: absolute;
+    right: 0;
+}
+
+.card-item__cover img {
+    animation: fade 1s;
+}
+
+.card-item__img--back {
+    display: none;
+}
+.card-item__cover:hover .card-item__img--back {
+    display: block;
+}
+.card-item__cover:hover .card-item__img--front {
+    display: none;
+}
+
+/*****  REGISTER *****/
+.article-form-coco {
+    gap: 30px;
+    margin: 36px 0px;
+    align-items: center;
+}
+
+.article-form-coco h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 4.2em;
+    line-height: 49.31px;
+    color: #1f1f1f;
+}
+
+.article-form-coco p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 3.2em;
+    line-height: 49.31px;
+    color: #1F1F1F;
+}
+
+/* SECCION FORMULARIO */
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-coco>label {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.4em;
+    font-weight: 400;
+    width: 233px;
+    line-height: 29.05px;
+    margin: 15px 0px;
+}
+.formulario-coco>input {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 19.36px;
+    width: 210px;
+    border: none;
+    border-bottom: 2px solid #FF3333;
+    outline: none;
+}
+
+
+/****  BOTON REGISTRAR ****/
+.contenedor-registrar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 36px auto;
+    gap: 30px;
+
+}
+
+.terminos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.terminos>label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    line-height: 21.78px;
+    color: #1F1F1F;
+}
+.terminos a {
+    text-decoration: none;
+    color: #1D84B5;
+}
+.terminos>input {
+    cursor: pointer;
+}
+
+.contenedor-registrar>button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 14.52px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #FF3333;
+    width: 103px;
+    height: 39px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.contenedor-registrar>button:hover{
+    background-color: #c83636;
+}
+
+
+/* ** FOOTER ** */
+.footer-coco {
+    background-color: #30343F;
+    padding: 62px;
+}
+
+.footer-coco__enlaces  {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 23.48px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.footer-coco__copy {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 23.48px;
+    margin-top: 30px;
+}
+
+/* ** ANIMATION ** */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+};
