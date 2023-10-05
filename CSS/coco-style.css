@@ -247,9 +247,17 @@ header {
     font-weight: 700;
 }
 
-.slider__items {
-    display: flex;
-    gap: 24px;
+iconify-icon {
+    color: var(--bg-dark-solid);
+    font-size: var(--font-24);
+    font-weight: 700;
+}
+
+.glide__arrow--left {
+    left: 0;
+}
+.glide__arrow--right {
+    right: 0;
 }
 
 .card-item__content {
