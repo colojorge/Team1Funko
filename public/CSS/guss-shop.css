@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root {
+    /* Paleta Colores*/
+    --gris-oscuro: #30343F;
+}
+
+header{
+    background-color: var(--gris-oscuro);
+    padding: 35px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+htm{
+    font-size: 62.5%;
+}
+.enlace-boton {
+    text-decoration: none;
+}
+
+
+/* ESTILOS NAV */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar_logo{
+    max-width: 300px;    
+}
+
+
+/* nav guss borrar*/
+.grid-item_head_gus {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+}
+
+.grid-item_head_gus a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.48px;
+    color: #FFFFFF;
+}
+
+
+/* Seccion Shop - Grilla de productos */
+.shop_grid_gus{
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    margin-top: 68px;               
+}
+
+.shop_aside_gus{
+    display:grid;
+    grid-column: 1 / 2;      
+}
+
+.shop_produ_grid_gus{
+    display: flex; 
+    flex-direction: column; 
+    gap: 3.6em;    
+}
+/* ul Style */
+.shop_cards_items{
+    display: flex;
+    gap: 10px;
+}
+
+/* item de lista style*/
+.shop_item{
+    display: flex;
+    flex-direction: column;     
+}
+
+/*card_item*/
+.cards_reutilizables{
+    margin:0px;    
+}
+
+/*contenedor de las letras/**/
+.card_item__content{
+    display: flex;
+    flex-direction: column; 
+    gap: 12px;
+    padding: 15px;
+    text-decoration: none;
+    margin: 0px;
+}
+
+/*contenedor del muñequito/**/
+.card_item__pic{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    text-decoration: none;
+    margin: 0px;
+}
+.card_item__link{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/*nombre marca*/
+.card_item__license{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #111111;
+    margin:0px;    
+}
+.card_item__name{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 800;
+    color: #111111;
+    margin:0px;
+}
+.card_item__price{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #111111;
+    margin:0px;    
+}
+.card_item__cuotas{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #1D84B5;
+    margin:0px;
+}
