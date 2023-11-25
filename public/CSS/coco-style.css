@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); */
 * {
     padding: 0;
     margin: 0;
@@ -8,9 +6,7 @@
 html {
     font-size: 62.5%;
 }
-.enlace-boton {
-    text-decoration: none;
-}
+
 /* LINEA ROJA ARTICLE */
 .hr-coco {
     border: 2px solid #FF3333;
@@ -19,7 +15,7 @@ html {
 .container-coco {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 16px 0;
+    
 }
 img {
     width: 100%;
@@ -31,14 +27,16 @@ header {
     padding: 36px;
 }
 
+
 .nav-coco {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    margin: 0 84px;
 }
 
 /* IMAGENES */
-.picture-nav-colo {
+.picture-nav-coco {
     max-width: 300px;
 }
 .enlace-carrito-coco>img {
@@ -47,16 +45,13 @@ header {
 
 /* NAV ENLACES */
 .enlaces-nav-coco {
-    list-style: none;
     display: flex; 
-    justify-content: space-around; 
     align-items: center;
-    gap: 20px;
+    gap: 36px;
 }
 .enlaces-coco {
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
-    text-decoration: none;
     font-weight: 500;
     font-size: 2em;
     padding: 8px 16px;
@@ -111,7 +106,6 @@ header {
     background-image: url("../img/funkos-banner.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: 0% 77%; */
     background-attachment: fixed;
     position: relative;
 }
@@ -136,7 +130,7 @@ header {
 }
 .banner-article-coco h3 {
     display: inline-block;
-    width: 302px;
+    /* width: 302px; */
     height: 45px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -205,6 +199,8 @@ header {
     color: #4F4F4F;
 }
 
+
+
 /* SECTION SEGUNDO BLOQUE */
 .section-coco:nth-child(2) .secction__article-coco {
     order: 2;
@@ -231,6 +227,7 @@ header {
     font-size: 2.5em;
 }
 
+
 /**** SECCION SLIDER *****/
 .slider {
     display: flex;
@@ -248,15 +245,17 @@ header {
 }
 
 iconify-icon {
-    color: var(--bg-dark-solid);
     font-size: var(--font-24);
     font-weight: 700;
 }
 
+
 .glide__arrow--left {
+    color: var(--bg-dark-solid);
     left: 0;
 }
 .glide__arrow--right {
+    color: var(--bg-dark-solid);
     right: 0;
 }
 
@@ -399,7 +398,6 @@ iconify-icon {
     color: #1F1F1F;
 }
 .terminos a {
-    text-decoration: none;
     color: #1D84B5;
 }
 .terminos>input {
@@ -425,12 +423,20 @@ iconify-icon {
 
 
 /* ** FOOTER ** */
+.picture {
+    width: 150px;
+}
+
 .footer-coco {
     background-color: #30343F;
     padding: 62px;
 }
 
-.footer-coco__enlaces  {
+.footer-enlaces {
+    list-style: none;
+}
+
+.footer-coco__enlaces {
     display: flex;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -450,6 +456,54 @@ iconify-icon {
     line-height: 23.48px;
     margin-top: 30px;
 }
+
+.footer-logo {
+    width: 5px;
+}
+
+@media (max-width: 768px) {
+    
+    body {
+        width: 100%;
+        margin: 0;
+    }
+    .container-coco {
+        width: calc(100% - 10px);
+    }
+    header {
+        width: 100%;
+        padding: 0px;
+    }
+    .section__article-coco {
+        width: calc(100% - 10px);
+    }
+    .nav-coco {
+        display: flex;
+        flex-direction: column;
+    }
+    .secction__article-coco {
+        font-size: 5px;
+        
+    }
+    .hr-coco {
+        border: 1px solid #FF3333;
+        margin: 5px 0px 0px;
+        width: 50em;
+    }
+    .boton-coleccion-coco {
+        width: 130px;
+        height: 30px;
+    }
+
+    .slider h2 {
+        font-size: 25px;
+        padding: 0px;
+    }
+
+    .card-item__tag {
+        padding: 0px;
+    }
+};
 
 /* ** ANIMATION ** */
 @keyframes fade {

@@ -461,7 +461,7 @@ img {
         padding: 0 5px;
         align-items: center;
         justify-content: space-between;
-}
+    }
     
     .nabvar__logo {
         display: inline-flex;
@@ -486,8 +486,7 @@ img {
         padding: var(--spacing-8) 0;
         display: inline-block;
         transition: background 0.3s ease-in-out ;
-        
-}
+    }
     .nabvar__item {
         width: 100%;
         border-bottom: 1px solid #F33;
@@ -575,8 +574,6 @@ img {
         bottom: 0;
         margin-left: 16px;
     }  
-
-
     .resumen__contain {
         width: 100%;
     }
@@ -616,7 +613,6 @@ img {
         border-radius: 0px 10px 0 10px;
     }
     
-
     /* Hambur Menu */    
 
     .menu-burguer {
@@ -649,7 +645,7 @@ img {
         width: 100%;
         margin-left: 65%;
         align-items: flex-end;
-}
+    }
     #menu-input:checked  ~ .menu-burguer{
         display:none;             
     }
