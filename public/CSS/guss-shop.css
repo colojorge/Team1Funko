@@ -1,5 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+/*@import url("./normalize.css");*/
+
+
+/* DESIGN SYSTEM */
+:root {
+    /* Palette */
+    --primary-solid: #FF3333;
+    --primary-900: rgb(255, 51, 51, 0.9);
+    --primary-500: rgb(255, 51, 51, 0.5);
+    --primary-300: rgb(255, 51, 51, 0.3);
+  
+    --secondary-solid: #1d84b5;
+    --secondary-900: rgb(29, 132, 181, 0.9);
+    --secondary-500: rgb(29, 132, 181, 0.5);
+    --secondary-300: rgb(29, 132, 181, 0.3);
+  
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+  
+    --bg-dark-solid: #30343F;
+    --bg-light-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+  
+    /* Typography */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+  
+    /* Font-sizes */
+    --font-46: 4.6rem; 
+    --font-38: 3.8rem; 
+    --font-30: 3.0rem; 
+    --font-24: 2.4rem; 
+    --font-20: 2rem; 
+    --font-16: 1.6rem; 
+    --font-14: 1.4rem; 
+  
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+  }
 
 :root {
     /* Paleta Colores*/
@@ -15,8 +64,8 @@ header{
     max-width: 1200px;
     margin: 0 auto;
 }
-
-htm{
+/* achica la letra...VER *************** */
+html{
     font-size: 62.5%;
 }
 .enlace-boton {
@@ -62,10 +111,27 @@ htm{
     grid-template-columns: 1fr 3fr; 
     margin-top: 68px;               
 }
+/* VER 1 columna en formato movil -ver que estilo general esta interfiriendo */
+@media (max-width: 767px) {
+    .shop_grid_gus {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 1023px) { /* Tamaño de pantalla para tablets */
+    .shop_grid_gus {
+        grid-template-columns: 1fr 1fr; /* Dos columnas para tablets */
+    }
+}
+
 
 .shop_aside_gus{
     display:grid;
-    grid-column: 1 / 2;      
+    grid-column: 1 / 2;
+    row-gap: 35px;
+    justify-items: end;
+    place-content: center; 
+    padding-top: 50px;         
 }
 
 .shop_produ_grid_gus{
@@ -73,21 +139,22 @@ htm{
     flex-direction: column; 
     gap: 3.6em;    
 }
-/* ul Style */
+/* ul Style ( llamadas slider_items en el video de Mission2 ) */
 .shop_cards_items{
     display: flex;
     gap: 10px;
 }
 
-/* item de lista style*/
+/* item de lista style ( llamadas slider_item en el video de Mission2 ) */
 .shop_item{
     display: flex;
     flex-direction: column;     
 }
 
-/*card_item*/
+/*card_item ( llamadas card_item en el video de Mission2 ) */
 .cards_reutilizables{
-    margin:0px;    
+    margin:0px;
+    position: relative;    
 }
 
 /*contenedor de las letras/**/
@@ -100,7 +167,26 @@ htm{
     margin: 0px;
 }
 
-/*contenedor del muñequito/**/
+/*contenedor del muñequito ( llamadas card_item__cover en el video de Mission2 ) */
+
+.card_item__tag{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size:var(--font-14);
+    text-transform: uppercase;
+    padding: var(--spacing-8) var(--spacing-12);
+    background-color: rgb(255, 51, 51, 1);
+    right: 0;
+    position:absolute;
+}
+
+.card_item__link{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/* ( llamadas card_item__cover en el video de Mission2 ) */
 .card_item__pic{
     display: flex;
     flex-direction: column;
@@ -109,10 +195,25 @@ htm{
     text-decoration: none;
     margin: 0px;
 }
-.card_item__link{
-    font-size: 1em;
-    font-weight: 500;
+
+/* ** ANIMATION ** importante que tenga el flex para que no cambie el tamaño  */
+.card_item__pic img{
+    animation: fade 1s;
+    -webkit-animation: fade 1s;
 }
+
+/* efecto de Rollover sobre la imagen | importante que tenga el flex para que no cambie el tamaño */ 
+.card-item__img--back {
+    display: none;
+}
+
+.card_item__pic:hover .card-item__img--back {
+    display: block;
+}
+.card_item__pic:hover .card-item__img--front {
+    display: none;
+}
+
 
 /*nombre marca*/
 .card_item__license{
@@ -143,4 +244,144 @@ htm{
     font-weight: 500;
     color: #1D84B5;
     margin:0px;
+}
+
+/* animacion tiempo */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+};
+
+/* aside */
+
+.buscador_aside_content{
+    align-self: start;
+}
+
+.shop_aside_gus{
+    padding: 70px 20px 0px 100px;
+}
+
+.buscador_tit{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+    margin:10px;
+    text-transform: uppercase;
+}
+
+.buscador_tit__minmax{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    margin:10px;
+    text-transform: uppercase;
+}
+
+.shop-buscar{
+    width: 243px;
+    height: 45px;
+    border-radius: 6px;
+    border: 2px #30343F solid;
+    background: #FFF;
+    /*justify-content: center;
+    align-items: center;*/
+    color: #a7a7a7;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.shop-busca-pasti{
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+}
+
+.shop-busca-pasti__filter{
+    padding-bottom: 0px;
+    margin-bottom: -5px;
+}
+.shop-busca__mm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.shop-busca__mmf{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-left: 30px;    
+}
+
+.shop-buscar__minmax{
+    width: 60px;
+    height: 28px;
+    border-radius: 6px;
+    border: 2px #30343F solid;
+    background: #FFF;
+    /*justify-content: center;
+    align-items: center;*/
+    color: #a7a7a7;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-left: 5px;    
+}
+
+.shop-buscar__minmaxfilter{
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px #30343F solid;
+    background: #FFF;      
+}
+
+/* ** FOOTER ** */
+.footer-cocogus {
+    display:grid;
+    grid-column: 1 / 5;
+    row-gap: 35px;
+    justify-items: end;
+    place-content: center; 
+    background-color: #30343F;
+    padding: 62px;
+    margin-top: 100px;
+}
+
+.footer-cocogus__enlaces  {
+    display: flex;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 23.48px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.footer-cocogus__copy {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 23.48px;
+    margin-top: 30px;
 }
