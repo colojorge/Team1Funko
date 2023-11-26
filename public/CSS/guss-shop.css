@@ -105,51 +105,54 @@ html{
 }
 
 
-/* Seccion Shop - Grilla de productos */
-.shop_grid_gus{
-    display: grid;
-    grid-template-columns: 1fr 3fr; 
-    margin-top: 68px;               
-}
-/* VER 1 columna en formato movil -ver que estilo general esta interfiriendo */
-@media (max-width: 767px) {
-    .shop_grid_gus {
-        grid-template-columns: 1fr !important;
-    }
+/* Seccion Shop - RESPONSIVE - Grilla de productos - */
+/* Estilos para pantallas mayores a 767px */
+
+/* Estilos para pantallas mayores a 767px */
+.shop_grid_gus {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en la actual */
+    justify-content: space-between; 
+    padding-top: 60px;                   
 }
 
-@media (max-width: 1023px) { /* Tamaño de pantalla para tablets */
-    .shop_grid_gus {
-        grid-template-columns: 1fr 1fr; /* Dos columnas para tablets */
-    }
-}
-
-
-.shop_aside_gus{
-    display:grid;
-    grid-column: 1 / 2;
+.shop_aside_gus {
+    width: 30%; /* Establece un ancho fijo para el aside */
+    margin-right: 2%; /* Agrega un pequeño margen entre el aside y el contenido principal */
     row-gap: 35px;
-    justify-items: end;
-    place-content: center; 
-    padding-top: 50px;         
+    padding-top: 50px; 
 }
 
-.shop_produ_grid_gus{
-    display: flex; 
-    flex-direction: column; 
-    gap: 3.6em;    
-}
-/* ul Style ( llamadas slider_items en el video de Mission2 ) */
-.shop_cards_items{
-    display: flex;
-    gap: 10px;
+.shop_produ_grid_gus {
+    width: 65%; /* Establece un ancho fijo para la sección principal */
+    padding-right: 5%;
 }
 
-/* item de lista style ( llamadas slider_item en el video de Mission2 ) */
-.shop_item{
-    display: flex;
-    flex-direction: column;     
+.shop_cards_items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    gap: 20px; /* Agrega espacio entre las tarjetas */
 }
+
+.shop_item {
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVE VER ABAJO */
+
+
+
+footer.footer-cocogus {
+    clear: both;
+    width: 100%; /* Asegura que el footer ocupe todo el ancho en pantallas pequeñas */
+    margin-top: 20px; /* Agrega un espacio superior para separar el footer del contenido */
+    margin-right: 0; /* Elimina cualquier margen derecho en pantallas pequeñas */
+}
+
+
 
 /*card_item ( llamadas card_item en el video de Mission2 ) */
 .cards_reutilizables{
@@ -161,8 +164,7 @@ html{
 .card_item__content{
     display: flex;
     flex-direction: column; 
-    gap: 12px;
-    padding: 15px;
+    gap: 0.5em;
     text-decoration: none;
     margin: 0px;
 }
@@ -384,4 +386,79 @@ html{
     font-size: 1.5em;
     line-height: 23.48px;
     margin-top: 30px;
+}
+
+/* Formato responsivo - Funciona el @media */
+
+/* Consulta de medios para pantallas MOVILES de 767px o menos */
+@media screen and (max-width: 767px) {
+    .shop_aside_gus,
+    .shop_produ_grid_gus {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .shop_cards_items {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .shop_item {
+        margin-bottom: 10px;
+    }
+    
+    footer.footer-cocogus {
+        clear: both;
+        width: 100%; /* Asegura que el footer ocupe todo el ancho en pantallas pequeñas */
+        margin-top: 20px; /* Agrega un espacio superior para separar el footer del contenido */
+        margin-right: 0; /* Elimina cualquier margen derecho en pantallas pequeñas */
+    }
+
+    .cards_reutilizables {
+        margin: 0;
+        position: relative;       
+    }
+    .card_item__pic {
+        display: flex;
+        flex-direction: column;
+        padding: 10% 40% 0% 0;
+        text-decoration: none;       
+    }
+    .card_item__content{
+        display: flex;
+        flex-direction: column; 
+        gap: 0.5em;
+        text-decoration: none;
+        margin-left: 20em;
+    }
+    .card_item__tag {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        font-size: var(--font-14);
+        text-transform: uppercase;
+        padding: 0.5em 10% 0.5em 15em;
+        background-color: rgb(179 179 179);
+        left: 0;
+        position:relative;
+    }
+    
+}
+
+/* TABLETS Consulta de medios para pantallas entre 768px y 1023px (TABLETS) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .shop_aside_gus {
+        width: 30%; /* O el ancho que desees para el aside en tablets */
+    }
+
+    .shop_produ_grid_gus {
+        width: 70%; /* O el ancho que desees para el área principal en tablets */
+        margin-right: 0; /* Ajusta el margen derecho según sea necesario */
+    }
+
+    .shop_cards_items {
+        grid-template-columns: 1fr 1fr; /* Muestra 2 columnas de tarjetas en tablets */
+        gap: 10px;
+    }
+   
 }
