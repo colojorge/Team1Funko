@@ -23,7 +23,7 @@
           <li><a class="enlaces-coco" href="../admin/login.html">ADMIN</a></li>
           <li><a class="enlaces-coco" href= "../../index.html">SALIR</a></li>
           <!-- "./pages/shop/contacto.html" -->
-        </ul>
+        </ul> 
       </nav>
     </header>
 
@@ -33,7 +33,7 @@
         <P>Completa el formulario para ser parte del mundo de los Funkos</P>
       </article>
       <section class="contenedor-formulario">
-        <form class="formulario-coco" action="./register/postRegister" method="POST">
+        <form id="limpiar" action="/admin/register" method="POST" class="formulario-coco" >
           <label for="nombre">Nombre:</label>
           <input id="nombre" type="text" name="nombre" placeholder="Ingresar nombre" required>
           <br>
@@ -46,11 +46,11 @@
           <label for="password">Contraseña:</label>
           <input id="password" type="password" name="password" placeholder="" required>
           <br>
-          <label for="password">Repita Contraseña:</label>
-          <input id="password" type="password" name="password" placeholder="" required>
+          <label for="password2" >Repita Contraseña:</label>
+          <input id="password2" type="password" name="password2" placeholder="" required>
           <div class="contenedor-registrar">
             <!-- <div> -->
-              <button>Registrar</button> <!-- button responde a action="" y el method="" --> 
+              <input class="enviarForm" type="submit"></input> <!-- button responde a action="" y el method="" --> 
             <!-- </div> -->
             <div class="terminos">
               <input id="checkbox" type="checkbox" name="checkbox" required>
@@ -68,12 +68,12 @@
           <li><a class="footer-coco__enlaces" href="../shop/shop.html">Shop</a></li>
           <li><a class="footer-coco__enlaces" href="../admin/register.html">Registrarse</a></li>
           <li><a class="footer-coco__enlaces" href="../admin/login.html">Ingresar</a></li>
-          <li><a class="footer-coco__enlaces" href="../shop/contacto.html">Contacto</a></li>
+          <li><a class="footer-coco__enlaces" href="#">Contacto</a></li>
         </ul>
         <picture><img src="../../img/branding/isotype.svg" alt="isotipo"/></picture>
       </nav>
       <p class="footer-coco__copy">All rights reserved 2023 - Funkoshop</p>
     </footer>
-      
+    <script src="register.js"></script>
   </body>
 </html>

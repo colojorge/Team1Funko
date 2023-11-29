@@ -400,14 +400,15 @@ iconify-icon {
 .terminos a {
     color: #1D84B5;
 }
-.terminos>input {
+.enviarForm {
     cursor: pointer;
 }
 
-.contenedor-registrar>button {
+/* .contenedor-registrar>button { */
+.enviarForm {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.6em;
     line-height: 14.52px;
     border: none;
     color: #FFFFFF;
@@ -417,7 +418,8 @@ iconify-icon {
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
-.contenedor-registrar>button:hover{
+/* .contenedor-registrar>button:hover{ */
+.enviarForm:hover {
     background-color: #c83636;
 }
 

@@ -1,3 +1,4 @@
+/.env
 /node_modules
 /packages
 /bin
@@ -36,47 +37,6 @@ Thumbs.db
 log/
 *.log
 
-<<<<<<< HEAD
-=======
-/node_modules
-/packages
-/bin
-/out
-/target
-.o
-.pyc
-.class
-.log
-.lock
-.tmp
-.DS_Store
-Thumbs.db
-
-# Node
-npm-debug.log
-node_modules/
-
-# Packages
-vendor/
-
-# Mac
-.DS_Store
-
-# Windows
-Thumbs.db
-
-# WebStorm/PhpStorm/VSCode
-.idea/
-.vscode/
-
-# vi
-*~
-
-# General
-log/
-*.log
-
->>>>>>> main
 
 Skip to content
 escrib

@@ -409,9 +409,9 @@ footer.footer-cocogus {
     
     footer.footer-cocogus {
         clear: both;
-        width: 100%; /* Asegura que el footer ocupe todo el ancho en pantallas pequeñas */
-        margin-top: 20px; /* Agrega un espacio superior para separar el footer del contenido */
-        margin-right: 0; /* Elimina cualquier margen derecho en pantallas pequeñas */
+        width: 100%; /* Asegura que el footer ocupe todo el ancho en pantallas pequeñas */ 
+        margin-top: 20px;  /* Agrega un espacio superior para separar el footer del contenido */ 
+        margin-right: 0;  /* Elimina cualquier margen derecho en pantallas pequeñas */ 
     }
 
     .cards_reutilizables {
