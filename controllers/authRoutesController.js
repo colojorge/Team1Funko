@@ -10,7 +10,7 @@ const authRoutesControllers = {
         console.log(name)
         const mensajes = {
             mensaje1: 'Garcias por registrarte...!',
-            mensaje2: 'Ahora podras disfrutar nuestras ofertas y promociones',
+            mensaje2: 'Disfrutá todas nuestras ofertas y promociones',
             mensaje3: 'Hola ' + name
         }
         res.render('index', { mensajes })

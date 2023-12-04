@@ -1,6 +1,5 @@
 import conn from '../config/conn.js';
 
-
 // la informacion que enviamos por postman entra en (data)
 const postForm = async (data) => {
     try {
