@@ -9,6 +9,7 @@
 }
 
 body {
+  margin: 0;
   color: azure;
   font-family: "Raleway", sans-serif;
   display: grid;
@@ -39,30 +40,17 @@ footer {
   text-align: center;
 }
 /*Header*/
-header {
-  display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 10% auto auto 10%;
-  grid-template-areas: ". logo nav .";
+nav {
+  display: flex;
+  height: 100%;
   align-items: center;
 }
 
-header > picture {
-  grid-area: logo;
-}
-
-header > picture > img {
-  max-height: 100%;
-  max-width: 100%;
-}
-header > nav {
-  grid-area: nav;
-}
-header > nav > ul {
+nav > ul {
   display: flex;
+  width: 100%;
   justify-content: space-evenly;
 }
-
 li > a {
   all: unset;
 }
@@ -87,4 +75,8 @@ footer > ul {
   flex-direction: column;
   height: 100%;
   place-content: space-evenly;
+}
+
+img {
+  height: 100%;
 }
