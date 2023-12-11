@@ -1,7 +1,7 @@
 import postForm from "../src/models/Formulario.js";
 
 const authRoutesControllers = {
-    login: (req, res) => res.send('Ruta logearse admin'),
+    login: (req, res) => res.render("login"),
     postLogin: (req, res) => res.send('Ruta enviar logearse admin'),
     register: (req, res) => res.send('Ruta registrarse admin'),
     postRegister: async (req, res) => {

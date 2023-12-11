@@ -1,0 +1,71 @@
+
+</head>
+<body>
+<%- include('partials/header') %>
+
+<main id="shopMain">
+    <aside>
+          <form id="filterForm">
+   
+              <label for="search">Buscar</label>
+              <input type="text" id="search" name="search" placeholder="Item o categoría">
+         
+  
+ 
+      <section id="priceFilters">
+        <label for="sort">Ordenar por</label>
+        <select id="sort" name="sort">
+          <option value="asc">Menor precio</option>
+          <option value="desc">Mayor precio</option>
+        </select>
+              <label for="minPrice">Precio Mínimo</label>
+              <input type="number" id="minPrice" name="minPrice" value="0" min="0">
+              <label for="maxPrice">Precio Máximo</label>
+              <input type="number" id="maxPrice" name="maxPrice" value="0" min="0">+
+        </section>
+        <section id="specialFilters">
+                <label>Filtrar</label>
+                <input type="checkbox" id="newFilter" name="newFilter">
+                <label for="newFilter">NUEVOS</label>
+      
+   
+                <input type="checkbox" id="offersFilter" name="offersFilter">
+                <label for="offersFilter">OFERTAS</label>
+       
+                <input type="checkbox" id="specialEditionFilter" name="specialEditionFilter">
+                <label for="specialEditionFilter">EDICION ESPECIAL</label>
+         
+                <input type="checkbox" id="favoritesFilter" name="favoritesFilter">
+                <label for="favoritesFilter">FAVORITOS</label>
+        </section>
+        
+            <button type="submit">Filtrar</button>
+          </form>
+       
+    </aside>
+    <section id="shopSection">
+        <ul>
+            <% products.forEach(product => { %>
+                <li>
+                    <article>
+                        <a href="/item?id=<%= product.product_id %>">
+                            <picture>
+                                <span class="tag"><%= product.licence_name %></span>
+                                <img class="product-image" src="<%= product.img_front %>" alt="<%= product.product_name %>">
+                                <img class="product-box-image" src="<%= product.img_back %>" alt="<%= product.product_name %> en caja">
+                            </picture>
+                        </a>
+                        <div>
+                            <p><%= product.licence_name %></p>
+                            <h4><%= product.product_name %></h4>
+                            <p>$ <%= product.product_price.toFixed(2) %></p>
+                            <p><%= product.dues %> CUOTAS SIN INTERÉS</p>
+                        </div>
+                    </article>
+                </li>
+            <% }); %>
+        </ul>
+    </section>
+      
+      
+</main>
