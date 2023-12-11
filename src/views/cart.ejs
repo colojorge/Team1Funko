@@ -1,6 +1,99 @@
-<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 <%- include('partials/header') %>
 
-<main>cart</main>
+<main id="cartMain">
+    <div>
+        <h2>MI CARRITO</h2>
+    </div>
+    
+    <section>
+        <header>
+            <p>Producto</p>
+            <p>Cantidad</p>
+            <p>Total</p>
+        </header>
+    
+        <article>
+            <section class="itemData">
+                <img src="../../img/star-wars/baby-yoda-1.webp" alt="Imagen del producto">
+                <div>
+                    <p>BABY YODA BLUEBALL</p>
+                    <p>STAR WARS</p>
+                    <p>Precio: $ 1799,99</p>
+                </div>
+                
+            <div>
+                <div>   
+                    <div>2</div>
+                    <div>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                </div>
+                <div>$ 3599,98</div>
+                <div>
+                    <button>Eliminar</button>
+                </div>
+            </div>
+            </section>
+    
+        </article>
+    
+        <article>
+            <section class="itemData">
+                <img src="../../img/pokemon/pidgeotto-1.webp" alt="Imagen del producto">
+                <div>
+                    <p>PIDGEOTTO</p>
+                    <p>POKEMON</p>
+                    <p>Precio: $ 1799,99</p>
+                </div>
+            </div>
+    
+            <div>
+                <div>   
+                    <div>2</div>
+                    <div>
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                </div>
+                <div>$ 3599,98</div>
+                <div>
+                    <button>Eliminar</button>
+                </div>
+            </div>
+            </section>
+        </article>
+    </section>
+    
+
+    
+    <section>
+        <div>
+            <h2>RESUMEN</h2>
+        </div>
+        <article>
+            <div>
+                <div>CANTIDAD</div>
+                <div>3</div>
+            </div>
+            <div>
+                <div>SUBTOTAL</div>
+                <div>$ 5.399,97</div>
+            </div>
+            <div>
+                <div>ENVÍO</div>
+                <div>$ 0.00</div>
+            </div>
+            <div>
+                <div>TOTAL</div>
+                <div>$ 5.399,97</div>
+            </div>
+        </article>
+    
+        <div>
+            <a href="#">IR A PAGAR</a>
+        </div>
+    </section>    
+</main>

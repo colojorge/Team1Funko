@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+/*@import url("./normalize.css");*/
+
+
+/* DESIGN SYSTEM */
+:root {
+    /* Palette */
+    --primary-solid: #FF3333;
+    --primary-900: rgb(255, 51, 51, 0.9);
+    --primary-500: rgb(255, 51, 51, 0.5);
+    --primary-300: rgb(255, 51, 51, 0.3);
+  
+    --secondary-solid: #1d84b5;
+    --secondary-900: rgb(29, 132, 181, 0.9);
+    --secondary-500: rgb(29, 132, 181, 0.5);
+    --secondary-300: rgb(29, 132, 181, 0.3);
+  
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+  
+    --bg-dark-solid: #30343F;
+    --bg-light-solid: #FAFAFF;
+    --light-font-solid: #FFFFFF;
+  
+    /* Typography */
+    --base-font: 'Inter', sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+  
+    /* Font-sizes */
+    --font-46: 4.6rem; 
+    --font-38: 3.8rem; 
+    --font-30: 3.0rem; 
+    --font-24: 2.4rem; 
+    --font-20: 2rem; 
+    --font-16: 1.6rem; 
+    --font-14: 1.4rem; 
+  
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+  }
+
+:root {
+    /* Paleta Colores*/
+    --gris-oscuro: #30343F;
+}
+
+header{
+    background-color: var(--gris-oscuro);
+    padding: 35px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* achica la letra...VER *************** */
+html{
+    font-size: 62.5%;
+}
+.enlace-boton {
+    text-decoration: none;
+}
+
+
+/* ESTILOS NAV */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar_logo{
+    max-width: 300px;    
+}
+
+
+/* nav guss borrar*/
+.grid-item_head_gus {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+}
+
+.grid-item_head_gus a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.48px;
+    color: #FFFFFF;
+}
+
+
+/* Seccion Shop - RESPONSIVE - Grilla de productos - */
+/* Estilos para pantallas mayores a 767px */
+
+/* Estilos para pantallas mayores a 767px */
+.shop_grid_gus {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben en la actual */
+    justify-content: space-between; 
+    padding-top: 60px;                   
+}
+
+.shop_aside_gus {
+    width: 30%; /* Establece un ancho fijo para el aside */
+    margin-right: 2%; /* Agrega un pequeño margen entre el aside y el contenido principal */
+    row-gap: 35px;
+    padding-top: 50px; 
+}
+
+.shop_produ_grid_gus {
+    width: 65%; /* Establece un ancho fijo para la sección principal */
+    padding-right: 5%;
+}
+
+.shop_cards_items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    gap: 20px; /* Agrega espacio entre las tarjetas */
+}
+
+.shop_item {
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVE VER ABAJO */
+
+
+
+footer.footer-cocogus {
+    clear: both;
+    width: 100%; /* Asegura que el footer ocupe todo el ancho en pantallas pequeñas */
+    margin-top: 20px; /* Agrega un espacio superior para separar el footer del contenido */
+    margin-right: 0; /* Elimina cualquier margen derecho en pantallas pequeñas */
+}
+
+
+
+/*card_item ( llamadas card_item en el video de Mission2 ) */
+.cards_reutilizables{
+    margin:0px;
+    position: relative;    
+}
+
+/*contenedor de las letras/**/
+.card_item__content{
+    display: flex;
+    flex-direction: column; 
+    gap: 0.5em;
+    text-decoration: none;
+    margin: 0px;
+}
+
+/*contenedor del muñequito ( llamadas card_item__cover en el video de Mission2 ) */
+
+.card_item__tag{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size:var(--font-14);
+    text-transform: uppercase;
+    padding: var(--spacing-8) var(--spacing-12);
+    background-color: rgb(255, 51, 51, 1);
+    right: 0;
+    position:absolute;
+}
+
+.card_item__link{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/* ( llamadas card_item__cover en el video de Mission2 ) */
+.card_item__pic{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    text-decoration: none;
+    margin: 0px;
+}
+
+/* ** ANIMATION ** importante que tenga el flex para que no cambie el tamaño  */
+.card_item__pic img{
+    animation: fade 1s;
+    -webkit-animation: fade 1s;
+}
+
+/* efecto de Rollover sobre la imagen | importante que tenga el flex para que no cambie el tamaño */ 
+.card-item__img--back {
+    display: none;
+}
+
+.card_item__pic:hover .card-item__img--back {
+    display: block;
+}
+.card_item__pic:hover .card-item__img--front {
+    display: none;
+}
+
+
+/*nombre marca*/
+.card_item__license{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #111111;
+    margin:0px;    
+}
+.card_item__name{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 800;
+    color: #111111;
+    margin:0px;
+}
+.card_item__price{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #111111;
+    margin:0px;    
+}
+.card_item__cuotas{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #1D84B5;
+    margin:0px;
+}
+
+/* animacion tiempo */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+};
+
+/* aside */
+
+.buscador_aside_content{
+    align-self: start;
+}
+
+.shop_aside_gus{
+    padding: 70px 20px 0px 100px;
+}
+
+.buscador_tit{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000000;
+    margin:10px;
+    text-transform: uppercase;
+}
+
+.buscador_tit__minmax{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    margin:10px;
+    text-transform: uppercase;
+}
+
+.shop-buscar{
+    width: 243px;
+    height: 45px;
+    border-radius: 6px;
+    border: 2px #30343F solid;
+    background: #FFF;
+    /*justify-content: center;
+    align-items: center;*/
+    color: #a7a7a7;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.shop-busca-pasti{
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+}
+
+.shop-busca-pasti__filter{
+    padding-bottom: 0px;
+    margin-bottom: -5px;
+}
+.shop-busca__mm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.shop-busca__mmf{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-left: 30px;    
+}
+
+.shop-buscar__minmax{
+    width: 60px;
+    height: 28px;
+    border-radius: 6px;
+    border: 2px #30343F solid;
+    background: #FFF;
+    /*justify-content: center;
+    align-items: center;*/
+    color: #a7a7a7;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-left: 5px;    
+}
+
+.shop-buscar__minmaxfilter{
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px #30343F solid;
+    background: #FFF;      
+}
+
+/* ** FOOTER ** */
+.footer-cocogus {
+    display:grid;
+    grid-column: 1 / 5;
+    row-gap: 35px;
+    justify-items: end;
+    place-content: center; 
+    background-color: #30343F;
+    padding: 62px;
+    margin-top: 100px;
+}
+
+.footer-cocogus__enlaces  {
+    display: flex;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 23.48px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.footer-cocogus__copy {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 23.48px;
+    margin-top: 30px;
+}
+
+/* Formato responsivo - Funciona el @media */
+
+/* Consulta de medios para pantallas MOVILES de 767px o menos */
+@media screen and (max-width: 767px) {
+    .shop_aside_gus,
+    .shop_produ_grid_gus {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .shop_cards_items {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .shop_item {
+        margin-bottom: 10px;
+    }
+    
+    footer.footer-cocogus {
+        clear: both;
+        width: 100%; /* Asegura que el footer ocupe todo el ancho en pantallas pequeñas */ 
+        margin-top: 20px;  /* Agrega un espacio superior para separar el footer del contenido */ 
+        margin-right: 0;  /* Elimina cualquier margen derecho en pantallas pequeñas */ 
+    }
+
+    .cards_reutilizables {
+        margin: 0;
+        position: relative;       
+    }
+    .card_item__pic {
+        display: flex;
+        flex-direction: column;
+        padding: 10% 40% 0% 0;
+        text-decoration: none;       
+    }
+    .card_item__content{
+        display: flex;
+        flex-direction: column; 
+        gap: 0.5em;
+        text-decoration: none;
+        margin-left: 20em;
+    }
+    .card_item__tag {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        font-size: var(--font-14);
+        text-transform: uppercase;
+        padding: 0.5em 10% 0.5em 15em;
+        background-color: rgb(179 179 179);
+        left: 0;
+        position:relative;
+    }
+    
+}
+
+/* TABLETS Consulta de medios para pantallas entre 768px y 1023px (TABLETS) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .shop_aside_gus {
+        width: 30%; /* O el ancho que desees para el aside en tablets */
+    }
+
+    .shop_produ_grid_gus {
+        width: 70%; /* O el ancho que desees para el área principal en tablets */
+        margin-right: 0; /* Ajusta el margen derecho según sea necesario */
+    }
+
+    .shop_cards_items {
+        grid-template-columns: 1fr 1fr; /* Muestra 2 columnas de tarjetas en tablets */
+        gap: 10px;
+    }
+   
+}

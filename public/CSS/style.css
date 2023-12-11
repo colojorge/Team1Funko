@@ -39,7 +39,11 @@ footer {
   align-items: center;
   text-align: center;
 }
+
 /*Header*/
+header {
+  padding: 1rem;
+}
 nav {
   display: flex;
   height: 100%;
@@ -50,6 +54,7 @@ nav > ul {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  align-items: center;
 }
 li > a {
   all: unset;
@@ -79,4 +84,153 @@ footer > ul {
 
 img {
   height: 100%;
+}
+
+/*Carrito*/
+#cartMain h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+/*Carrito*/
+#cartMain header {
+  display: flex;
+}
+
+#cartMain article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+#cartMain img {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+#cartMain p {
+  margin: 5px 0;
+}
+
+#cartMain button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#cartMain button:hover {
+  background-color: #45a049;
+}
+
+#cartMain a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#cartMain a:hover {
+  background-color: #2980b9;
+}
+
+#cartMain .itemData {
+  display: flex;
+}
+/*Shop*/
+#shopMain {
+  display: grid;
+  grid-template-columns: 20% auto;
+  justify-items: center;
+}
+
+/* Agrega estos estilos para controlar el tamaño de las imágenes */
+#shopMain .product-image {
+  max-width: 100%; /* La imagen no debe exceder el ancho del contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+#shopMain .product-box-image {
+  max-width: 100%;
+  height: auto;
+  display: none; /* Oculta la imagen de la caja por defecto */
+}
+
+/* Estilo adicional para mostrar la imagen de la caja al pasar el ratón */
+#shopMain article:hover .product-box-image {
+  display: block; /* Muestra la imagen de la caja al pasar el ratón sobre el artículo */
+}
+
+#shopSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#shopSection ul {
+  padding: 1%;
+  margin: 0;
+}
+
+#shopSection .tag {
+  float: right;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: var(--font-14);
+  text-transform: uppercase;
+  padding: var(--spacing-8) var(--spacing-12);
+  background-color: rgb(255, 51, 51, 1);
+}
+
+#shopSection ul {
+  display: contents;
+}
+
+#adminMain {
+  padding: 2rem;
+}
+
+#adminMain a,
+#adminMain a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#adminMain table {
+  width: 60%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+  color: black;
+}
+
+#adminMain th,
+#adminMain td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgb(var(--color-tuna));
+}
+
+#adminMain th {
+  background-color: rgb(var(--color-baltic-sea));
+  color: white;
+}
+
+#adminMain td {
+  background-color: white;
+}
+
+#adminMain section {
+  width: 60%;
+  display: flex;
+  float: left;
+  place-content: flex-end;
 }

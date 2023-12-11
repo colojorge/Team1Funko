@@ -1,0 +1,38 @@
+</head>
+<body>
+<%- include('partials/header') %>
+
+<main id="adminMain">
+    <h1>Lista de Productos</h1>
+    <section><p>Agregar</p><button>+</button></section>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Código</th>
+          <th>Nombre del Producto</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% products.forEach(product => { %>
+          <tr>
+            <td><%= product.product_id %></td>
+            <td><%= product.product_sku %></td>
+            <td><%= product.product_name %></td>
+            <td>
+        
+              <a href="/edit?id=<%= product.product_id %>">
+                🛠️
+              </a>
+              
+             
+              <a href="/delete?id=<%= product.product_id %>">
+                🗑️
+              </a>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table></main>
